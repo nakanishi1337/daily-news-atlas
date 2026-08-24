@@ -63,6 +63,28 @@ python3 collect_daily_news.py --all-pages --pretty --output daily_news_articles.
 
 追加候補から選ぶなら `Wobbly Beer Glass` → `Robot Chef` → `England to Reward People for Going for a Walk` → `Sushi Pizza` → `City Nicknames` の順がおすすめです。
 
+### アーカイブからのおすすめ
+
+全期間の記事を収集した後、これまで候補に入っていなかった2020〜2024年の記事から追加で選びました。
+
+| 記事 | 公開年 | Level | 選定理由 |
+|---|:---:|:---:|---|
+| [Japanese Brewery Releases Special Slow-Drink Glass](https://eikaiwa.dmm.com/app/daily-news/article/japanese-brewery-releases-special-slow-drink-glass/vEUGNkjiEe-7F6_9GZ2lmw) | 2024 | 6 | 飲む速さを変えるグラスで、商品の工夫について話しやすい |
+| [Japanese Pizza Chain Delivers Pizza for Dogs](https://eikaiwa.dmm.com/app/daily-news/article/japanese-pizza-chain-delivers-pizza-for-dogs/vWvv-nT5Ee-ozPsNdD79zw) | 2024 | 5 | 犬用ピザという分かりやすい意外性があり、ペットの話にも広げられる |
+| [Scone: The Word That Divides the UK](https://eikaiwa.dmm.com/app/daily-news/article/scone-the-word-that-divides-the-uk/TDvX6Go-Ee-dGN8NwN0O1w) | 2024 | 6 | 同じ英単語の発音の違いから、地域や言葉の話ができる |
+| [Lost Parakeet Rides Bullet Train, Travels to Tokyo](https://eikaiwa.dmm.com/app/daily-news/article/lost-parakeet-rides-bullet-train-travels-to-tokyo/oN4rZmCdEe-kRE8HGZUXdQ) | 2024 | 6 | インコが新幹線で東京へ行く軽いニュースで、内容を説明しやすい |
+| [Japanese People Are Taking Smiling Lessons](https://eikaiwa.dmm.com/app/daily-news/article/japanese-people-are-taking-smiling-lessons/ET2GDPOCEe255vsc3nP0Ug) | 2023 | 6 | 笑顔の練習という珍しい習慣を、文化や自分の経験と比較できる |
+| [Bluetooth: The Unusual History of a Name](https://eikaiwa.dmm.com/app/daily-news/article/bluetooth-the-unusual-history-of-a-name/iakgzrbJEe2L9UucDZi9_g) | 2023 | 6 | 身近な技術の名前の由来で、国や都市の愛称記事に近い |
+| [Tea Bag, Hot Water, Milk: How 70% of Britons Make Tea](https://eikaiwa.dmm.com/app/daily-news/article/tea-bag-hot-water-milk-how-70-of-britons-make-tea/qbcyCqC-Ee2ZenP8negxag) | 2023 | 6 | 飲み物の作り方を通して、英国と日本の習慣を比較できる |
+| [Japan's Momofuku Ando and the History of Instant Noodles](https://eikaiwa.dmm.com/app/daily-news/article/japans-momofuku-ando-and-the-history-of-instant-noodles/5tgSYnDLEe2mpt-_PxNA7Q) | 2023 | 6 | 好きだった冷水カップ麺記事につながる、身近な食品の歴史 |
+| [This Mattress Company Is Paying People to Sleep in Public](https://eikaiwa.dmm.com/app/daily-news/article/this-mattress-company-is-paying-people-to-sleep-in-public/ETX0zhpbEe2ph0v-Ptr7UQ) | 2022 | 6 | 寝ると報酬がもらえる仕事で、ユニークな制度の話に近い |
+| [These Electric Chopsticks Make Food Taste Saltier](https://eikaiwa.dmm.com/app/daily-news/article/these-electric-chopsticks-make-food-taste-saltier/6kMAZMWHEeyWehcg72DigQ) | 2022 | 6 | 食事と新技術を組み合わせた、試してみたいか答えやすい商品 |
+| [Would You Add Hot Sauce to Your Coffee?](https://eikaiwa.dmm.com/app/daily-news/article/would-you-add-hot-sauce-to-your-coffee/-eKRkKw_Eeu9noNnn9nlWQ) | 2021 | 6 | 変わった味の組み合わせについて気軽に賛否を話せる |
+| [People in Taiwan Change Names to 'Salmon' for Free Sushi](https://eikaiwa.dmm.com/app/daily-news/article/people-in-taiwan-change-names-to-salmon-for-free-sushi/x8m7XItlEeusDgfBzib6Qw) | 2021 | 5 | 無料寿司のための改名という、食・名前・海外制度が揃った題材 |
+| [Robot Wolves Protect Japanese City from Bears](https://eikaiwa.dmm.com/app/daily-news/article/robot-wolves-protect-japanese-city-from-bears/DEJGRi9PEeuz-4_mIcDz5g) | 2020 | 6 | ロボットのオオカミという意外性があり、日本の事情も説明しやすい |
+
+この中では `Slow-Drink Glass` → `Salmon Name` → `Electric Chopsticks` → `Bluetooth` → `Instant Noodles` の順がおすすめです。
+
 ### 選びやすい記事の傾向
 
 - Level 5〜6
