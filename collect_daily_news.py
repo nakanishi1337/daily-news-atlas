@@ -154,8 +154,16 @@ def fetch_all_pages(delay: float, max_pages: int | None = None) -> list[Article]
     page = 1
     while max_pages is None or page <= max_pages:
         separator = "&" if "?" in SEARCH_URL else "?"
-        html = fetch(f"{SEARCH_URL}{separator}page={page}")
+        page_url = f"{SEARCH_URL}{separator}page={page}"
+        html = fetch(page_url)
         articles = parse(html)
+        # Some older result pages intermittently return only the client-side
+        # loading shell. A changing query parameter bypasses that bad cache.
+        for retry in range(1, 6):
+            if articles:
+                break
+            html = fetch(f"{page_url}&collector_retry={retry}")
+            articles = parse(html)
         new_count = 0
         for article in articles:
             if article.url not in collected:
