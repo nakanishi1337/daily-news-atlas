@@ -27,6 +27,42 @@ python3 collect_daily_news.py --all-pages --pretty --output daily_news_articles.
 
 最初に選ぶなら `Breakfast` → `Milk Comics` → `US vs. UK Shopping Language` の順がおすすめです。
 
+### 追加候補
+
+収集済みの全1,441記事のうち、Level 5〜6の689記事から追加で選んだ候補です。
+
+#### 特におすすめ
+
+| # | 記事 | Level | 選定理由 |
+|---:|---|:---:|---|
+| 1 | [Wobbly Beer Glass Forces You to Drink Water](https://eikaiwa.dmm.com/app/daily-news/article/wobbly-beer-glass-forces-you-to-drink-water/ca8y6JX-EfGzxMdwj23Mvw) | 6 | 水を飲ませる変わった商品で、行動を変える仕組みについて話しやすい |
+| 2 | [Robot Chef Cooks Noodles in Just 90 Seconds](https://eikaiwa.dmm.com/app/daily-news/article/robot-chef-cooks-noodles-in-just-90-seconds/KJqy1JVQEfGF01cAUoqZeA) | 6 | 新しい食の技術やロボット料理について話せる |
+| 3 | [England to Reward People for Going for a Walk](https://eikaiwa.dmm.com/app/daily-news/article/england-to-reward-people-for-going-for-a-walk/0kGY2nyBEfGiTG827KIIqw) | 6 | 運動への報奨制度を韓国の記事と比較できる |
+| 4 | [Osaka Restaurant Adds Sushi Pizza to Its Menu](https://eikaiwa.dmm.com/app/daily-news/article/osaka-restaurant-adds-sushi-pizza-to-its-menu/GnCjwmLrEfGkX7PQPazHOg) | 5 | 変わった料理を食べたいか、気軽に意見を言える |
+| 5 | [How the World's Greatest Cities Got Their Nicknames](https://eikaiwa.dmm.com/app/daily-news/article/how-the-worlds-greatest-cities-got-their-nicknames/kvwAGM1gEeyal6spyz0dBw) | 6 | 国の愛称記事の都市版で、好みとの一致度が高い |
+
+#### 食べ物・飲み物
+
+| 記事 | Level | 選定理由 |
+|---|:---:|---|
+| [Kamakura Store Sells Kanji Ice Cream That Doesn't Melt](https://eikaiwa.dmm.com/app/daily-news/article/kamakura-store-sells-kanji-ice-cream-that-doesnt-melt/aVU-hFX5EfGQ9CeISDyp1w) | 5 | 溶けない漢字アイスという、説明しやすく意外性のある商品 |
+| [Fries Taste Better When Stolen, Study Finds](https://eikaiwa.dmm.com/app/daily-news/article/fries-taste-better-when-stolen-study-finds/Uo5KhEj7EfGOrft6IRWOJw) | 6 | 自分の経験や食事のマナーに話を広げやすい |
+| [Why Some Dishes Taste Better the Next Day](https://eikaiwa.dmm.com/app/daily-news/article/why-some-dishes-taste-better-the-next-day/tauowPe-EfC6zUtLUQy0aQ) | 6 | カレーなど身近な例を使って説明できる |
+| [People Like Insect Protein Bars if They Try Them — Study](https://eikaiwa.dmm.com/app/daily-news/article/people-like-insect-protein-bars-if-they-try-them-study/V6ONaHuvEfGrKbP1nrIRPw) | 6 | 昆虫食を試せるか、軽い賛否を話せる |
+| [Special Meals Help People Get Through the Week](https://eikaiwa.dmm.com/app/daily-news/article/special-meals-help-people-get-through-the-week/GSj7LHOeEfG6XRMGbNWqDA) | 5 | ご褒美や好きな食事を自分の生活から答えられる |
+| [Cool Off with These Cold Summer Coffee Recipes](https://eikaiwa.dmm.com/app/daily-news/article/cool-off-with-these-cold-summer-coffee-recipes/ax49RGjfEfGtdU_XtHz4IA) | 6 | 好きな飲み方や海外のコーヒー文化について話せる |
+
+#### 海外文化・ユニークな仕組み
+
+| 記事 | Level | 選定理由 |
+|---|:---:|---|
+| [Indonesian Parents Name Kids After Anime Characters](https://eikaiwa.dmm.com/app/daily-news/article/indonesian-parents-name-kids-after-anime-characters/NyemJpW6EfGMUte5PBT1MQ) | 6 | 名前、アニメ、海外での日本文化を組み合わせた話題 |
+| [Swiss Bus Has No Destination, Just Conversation](https://eikaiwa.dmm.com/app/daily-news/article/swiss-bus-has-no-destination-just-conversation/5y80el9qEfGp-4-qd0DAWw) | 6 | 会話だけを目的にしたバスへ参加したいかを話せる |
+| [Taiwan to Pay Tourists to Visit Again](https://eikaiwa.dmm.com/app/daily-news/article/taiwan-to-pay-tourists-to-visit-again/FcmBeHqREfGSLNtlTBDhNA) | 6 | 報奨制度と旅行経験を組み合わせて話せる |
+| [Why Do Countries Drive on Different Sides of the Road?](https://eikaiwa.dmm.com/app/daily-news/article/why-do-countries-drive-on-different-sides-of-the-road/1uY-LLACEey0iL94DWsC5Q) | 6 | 国による身近な違いを比較できる |
+
+追加候補から選ぶなら `Wobbly Beer Glass` → `Robot Chef` → `England to Reward People for Going for a Walk` → `Sushi Pizza` → `City Nicknames` の順がおすすめです。
+
 ### 選びやすい記事の傾向
 
 - Level 5〜6
