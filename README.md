@@ -85,6 +85,47 @@ python3 collect_daily_news.py --all-pages --pretty --output daily_news_articles.
 
 この中では `Slow-Drink Glass` → `Salmon Name` → `Electric Chopsticks` → `Bluetooth` → `Instant Noodles` の順がおすすめです。
 
+### 分野を広げるおすすめ
+
+これまでの食べ物・旅行・海外習慣中心の傾向から意図的に離れ、技術・科学・心理・仕事・歴史・環境から選んだ候補です。Level 7も含め、少し難しい意見説明にも挑戦できます。
+
+#### 技術・未来
+
+| 記事 | Level | 選定理由 |
+|---|:---:|---|
+| [Japan Builds Its First 3D-Printed Two-Story Home](https://eikaiwa.dmm.com/app/daily-news/article/japan-builds-its-first-3d-printed-two-story-home/CSCkQk4iEfG7Z_88xAO8tQ) | 7 | 3Dプリンター住宅の利点、安全性、住宅不足への効果を考えられる |
+| [New Battery Powers EV for 1,000 Kilometers](https://eikaiwa.dmm.com/app/daily-news/article/new-battery-powers-ev-for-1000-kilometers/AcYxWKTxEe6bgg8Ar_2G-A) | 7 | EV普及の条件や、航続距離と充電時間の重要性を比較できる |
+| [Japan to Launch Wooden Satellite This Year](https://eikaiwa.dmm.com/app/daily-news/article/japan-to-launch-wooden-satellite-this-year/16iW2uFaEe614xu2-7H4fA) | 7 | 木製人工衛星を入口に、宇宙ごみや新素材について話せる |
+| [Short-Distance Electric Flights Coming to Europe](https://eikaiwa.dmm.com/app/daily-news/article/short-distance-electric-flights-coming-to-europe/Uiiu2pScEfGFwn-e8AmgKQ) | 7 | 電動航空機の実現性や鉄道との使い分けを議論できる |
+| [How to Tell if a Face Was Made by AI](https://eikaiwa.dmm.com/app/daily-news/article/how-to-tell-if-a-face-was-made-by-ai/yIjmFHu9EfGs8V9j8zLcOw) | 7 | AI画像、偽情報、ネット上の信頼性を考えられる |
+
+#### 脳・心理
+
+| 記事 | Level | 選定理由 |
+|---|:---:|---|
+| [Writing by Hand May Improve Brain Connectivity](https://eikaiwa.dmm.com/app/daily-news/article/writing-by-hand-may-improve-brain-connectivity/qgoSANSDEe65mu__o8EQ0g) | 6 | 手書きとタイピングを自分の勉強方法と結びつけられる |
+| [Reading Aloud Helps Memory, But Not Comprehension](https://eikaiwa.dmm.com/app/daily-news/article/reading-aloud-helps-memory-but-not-comprehension/misF7t_fEe6tYz89ClN_mw) | 6 | 音読を使った英語学習について講師と直接話せる |
+| [Thinking Longer Can Lead to Worse Decisions — Study](https://eikaiwa.dmm.com/app/daily-news/article/thinking-longer-can-lead-to-worse-decisions-study/JmexuFYKEfGdqwcU5IFbKg) | 6 | 考える時間と判断の質について、自分の経験から意見を言える |
+| [Why Forgetting Your Phone Might Help Your Memory](https://eikaiwa.dmm.com/app/daily-news/article/why-forgetting-your-phone-might-help-your-memory/JUz38InxEfG_b69PXi9CQg) | 7 | スマートフォンへの依存と記憶の関係を考えられる |
+
+#### 仕事・社会
+
+| 記事 | Level | 選定理由 |
+|---|:---:|---|
+| [How to Make Time for 'Deep Work'](https://eikaiwa.dmm.com/app/daily-news/article/how-to-make-time-for-deep-work/3E1LiLRHEfCW3G8Ni9xBrQ) | 7 | 集中を妨げるものや、自分の仕事環境について話せる |
+| [Can a Four-Day Week Work for Everyone?](https://eikaiwa.dmm.com/app/daily-news/article/can-a-four-day-week-work-for-everyone/InaxGA2nEfGbAo_15D7fIA) | 6 | 週休3日の利点と問題点を整理して議論できる |
+| [Gaming Helps with Career Skills, Workers Say](https://eikaiwa.dmm.com/app/daily-news/article/gaming-helps-with-career-skills-workers-say/YzE5QEisEfGTux-bgf-GXw) | 7 | ゲームで得る能力が仕事に役立つかを話せる |
+
+#### 歴史・文化・環境
+
+| 記事 | Level | 選定理由 |
+|---|:---:|---|
+| [Museum of Failure Celebrates Inventors' Mistakes](https://eikaiwa.dmm.com/app/daily-news/article/museum-of-failure-celebrates-inventors-mistakes/5Gk4UlfGEe6Lr0cuKXA3zA) | 7 | 失敗した製品から、挑戦や失敗の価値について考えられる |
+| [Heating Up History: The Story of the Microwave Oven](https://eikaiwa.dmm.com/app/daily-news/article/heating-up-history-the-story-of-the-microwave-oven/XLOYii-yEe61Dl8zPdtUag) | 6 | 身近な技術が生まれた歴史を専門知識なしで楽しめる |
+| [Do Plastic Bag Bans Actually Work? Researchers Say Yes](https://eikaiwa.dmm.com/app/daily-news/article/do-plastic-bag-bans-actually-work-researchers-say-yes/xEvYEMH1Ee6lVS8za-Zqdg) | 7 | 環境政策が実際に効果を出すか議論できる |
+
+この中では `3D-Printed Home` → `Writing by Hand` → `Museum of Failure` → `Four-Day Week` → `Wooden Satellite` の順がおすすめです。
+
 ### 選びやすい記事の傾向
 
 - Level 5〜6
