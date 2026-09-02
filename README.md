@@ -12,20 +12,22 @@ python3 collect_daily_news.py --all-pages --pretty --output daily_news_articles.
 
 ## レッスン候補
 
-食事・飲み物・運動などの身近な話題、海外との違い、少し意外な商品や制度を中心にした候補です。上から順におすすめです。
+記事本文の難しさよりも、Discussionで自分の経験や身近な日本の状況を話しやすいかを重視した候補です。Level 8も含みます。上から順におすすめです。
 
 | # | 記事 | Level | 選定理由 |
 |---:|---|:---:|---|
-| 1 | [Breakfast: A World of Choices](https://eikaiwa.dmm.com/app/daily-news/article/breakfast-a-world-of-choices/kHuhFLXfEeijR-febh7u2g) | 6 | 国ごとの朝食を、自分の習慣や旅行経験と比較しやすい |
-| 2 | [Milk Comics: A Fun Way to Get Kids Drinking Milk](https://eikaiwa.dmm.com/app/daily-news/article/milk-comics-a-fun-way-to-get-kids-drinking-milk/PIyeOHdTEe6o2D_H24l9QQ) | 6 | 行動を促すユニークな仕組みについて話せる |
-| 3 | [Coke and Pickles? Star Reveals Unusual Drink Choice](https://eikaiwa.dmm.com/app/daily-news/article/coke-and-pickles-star-reveals-unusual-drink-choice/NFeYqoxjEe-S8ocO5ijmVQ) | 6 | 変わった組み合わせを試したいか、気軽に意見を言える |
-| 4 | [Out and About: US vs. UK Shopping Language](https://eikaiwa.dmm.com/app/daily-news/article/out-and-about-us-vs-uk-shopping-language/NVBgsITLEe-aw2uJaE17mg) | 5 | 米英の身近な言葉の違いを学べる |
-| 5 | [Italian Named the World's Most Attractive Accent](https://eikaiwa.dmm.com/app/daily-news/article/italian-named-the-worlds-most-attractive-accent/2EDJQtSxEe6Vskt6iJKogg) | 5 | 好きな言語の音や聞き取りやすい英語について話せる |
-| 6 | [No-Buy List — A Money-Saving Trend for 2025](https://eikaiwa.dmm.com/app/daily-news/article/no-buy-list-a-money-saving-trend-for-2025/YjeJGNmuEe-k8X8msTx7Vg) | 5 | 買い物や節約を自分の生活に結びつけやすい |
-| 7 | [All Aboard: The Origins of the Sushi Train](https://eikaiwa.dmm.com/app/daily-news/article/all-aboard-the-origins-of-the-sushi-train/SlRkoHUKEe-NLLPyxdA4Fg) | 6 | 身近な日本文化を講師へ説明しやすい |
-| 8 | [Palau to Reward Tourists Who Respect the Environment](https://eikaiwa.dmm.com/app/daily-news/article/palau-to-reward-tourists-who-respect-the-environment/PRNf1NyDEeyH8mfM5CE61w) | 6 | ユニークな報奨制度と旅行の話を組み合わせられる |
+| 1 | [Japan's Convenience Stores Ready to Help After Disasters](https://eikaiwa.dmm.com/app/daily-news/article/japans-convenience-stores-ready-to-help-after-disasters/dk4USlCAEfGNjhczHT6-2A) | 7 | 防災の備えと普段使うコンビニの両方を、自分の経験から具体的に話せる（利用して特に良かった記事） |
+| 2 | [Why Tourists Love Foreign Supermarkets](https://eikaiwa.dmm.com/app/daily-news/article/why-tourists-love-foreign-supermarkets/OnFdcJgyEfGVtH8zH3DSHQ) | 7 | 旅行先のスーパー、日本との違い、買いたい商品について答えやすい |
+| 3 | [FamilyMart Uses Cute Stickers to Fight Food Waste](https://eikaiwa.dmm.com/app/daily-news/article/familymart-uses-cute-stickers-to-fight-food-waste/gr0MEMjBEe-hbDu_rqAE4A) | 7 | コンビニでの買い物経験から、値引きや食品ロス対策の効果を話せる |
+| 4 | [How Smartphone Use Is Affecting Our Bodies](https://eikaiwa.dmm.com/app/daily-news/article/how-smartphone-use-is-affecting-our-bodies/p8ApennNEfGM5Q-NWesaPg) | 8 | 毎日のスマホ利用、姿勢、利用時間など、自分の習慣をそのまま話題にできる |
+| 5 | [More Clothing Brands Offering Repair Services](https://eikaiwa.dmm.com/app/daily-news/article/more-clothing-brands-offering-repair-services/9XjAopVQEfGpyTNNXjaStA) | 8 | 服を修理するか買い替えるか、価格や環境面から身近な意見を言える |
+| 6 | [Airline to Charge Passengers to Use Overhead Lockers](https://eikaiwa.dmm.com/app/daily-news/article/airline-to-charge-passengers-to-use-overhead-lockers/w__-KJGVEfGuDQuKR7becA) | 7 | 飛行機で何に追加料金を払えるか、旅行経験をもとに賛否を話せる |
+| 7 | [Why Do We Get Grumpy in Hot Weather?](https://eikaiwa.dmm.com/app/daily-news/article/why-do-we-get-grumpy-in-hot-weather/VWAuanTREfGJuf9eBBU6LQ) | 8 | 暑さによる気分や行動の変化、夏の対策を実体験から答えられる |
+| 8 | [Some US Colleges Now Offer 'Influencer' Degrees](https://eikaiwa.dmm.com/app/daily-news/article/some-us-colleges-now-offer-influencer-degrees/_7zrnJe8EfGCpsvFKz2b0A) | 8 | インフルエンサーに大学教育が必要か、SNSや仕事の観点から話しやすい |
+| 9 | ['FIRE' Movement Helps People Retire Early](https://eikaiwa.dmm.com/app/daily-news/article/fire-movement-helps-people-retire-early/ehAqxp0DEfGN33vEy60xtw) | 7 | 節約、仕事、理想の退職年齢を自分の価値観に結びつけられる |
+| 10 | [Japan's Convenience Stores Report Record Profits](https://eikaiwa.dmm.com/app/daily-news/article/japans-convenience-stores-report-record-profits/GwZ-cj57EfGzSQ_CB2iZWA) | 7 | よく使うサービスや価格、コンビニが好調な理由を日本の生活から説明できる |
 
-最初に選ぶなら `Breakfast` → `Milk Comics` → `US vs. UK Shopping Language` の順がおすすめです。
+最初に選ぶなら `Disasters and Convenience Stores` → `Foreign Supermarkets` → `FamilyMart Food Waste` の順がおすすめです。Level 8にも挑戦するなら `Smartphone Use` が第一候補です。
 
 ### 追加候補
 
@@ -128,7 +130,8 @@ python3 collect_daily_news.py --all-pages --pretty --output daily_news_articles.
 
 ### 選びやすい記事の傾向
 
-- Level 5〜6
-- Food & Drink、Culture、Health & Lifestyle
-- 新商品、生活習慣、海外のユニークな制度
-- 専門知識がなくても、自分の経験や日本との比較で答えられるもの
+- Levelは原則として制限しない（Level 7〜8でもDiscussionが身近なら優先）
+- コンビニ、買い物、スマホ、食事、仕事、旅行、防災など日常と接点がある題材
+- 新商品、生活習慣、海外との違い、生活に関わる制度
+- 専門知識がなくても、自分の経験、日本との比較、賛否と理由で答えられるDiscussion
+- 本文が多少難しくても、Discussionの質問を読んだ瞬間に具体例を思いつけるもの
