@@ -35,11 +35,11 @@ python3 collect_daily_news.py --all-pages --pretty --output daily_news_articles.
 | 17 | [Fewer than 10,000 Bookstores Remain in Japan](https://eikaiwa.dmm.com/app/daily-news/article/fewer-than-10000-bookstores-remain-in-japan/Gqm5EGplEfGMko8qjCGmig) | 5 | 本・地域社会 | 本をどこで買うか、書店が地域に必要かを自分の習慣から話せる |
 | 18 | [74% of US Consumers Have Used AI to Shop](https://eikaiwa.dmm.com/app/daily-news/article/74-of-us-consumers-have-used-ai-to-shop/3_NPoomVEfGg0JPJm6pwAw) | 6 | AI・買い物 | 買い物にAIを使いたいか、店員やレビューとの比較ができる |
 | 19 | [Coffee Cup Texture May Change What You Taste](https://eikaiwa.dmm.com/app/daily-news/article/coffee-cup-texture-may-change-what-you-taste/0B6w8nS1EfGSDZfW8vCwHg) | 7 | 食・心理 | 好きな飲み物やカップへのこだわりを、日常の経験から話せる |
-| 20 | [Hong Kong Restaurants Now Allow Dogs](https://eikaiwa.dmm.com/app/daily-news/article/hong-kong-restaurants-now-allow-dogs/lAtcGoDGEfGoqevVSt55Lg) | 8 | ペット・食 | ペット同伴の店を利用したいか、衛生や利便性の賛否を話せる |
+| 20 | [New Pixel Phones Betting on AI to Tempt Buyers](https://eikaiwa.dmm.com/app/daily-news/article/new-pixel-phones-betting-on-ai-to-tempt-buyers/VIBC5JboEfGRlKv74RAPtA) | 8 | スマホ・AI | 新しいスマホに欲しい機能や、買い替えの基準を話せる |
 | 21 | [Hotel, Airbnb, Hostel: Where to Stay on Holiday](https://eikaiwa.dmm.com/app/daily-news/article/hotel-airbnb-hostel-where-to-stay-on-holiday/SmcaCCbqEfGZoL-1li9wuQ) | 4 | 旅行・宿泊 | 宿泊先を選ぶ基準や過去の旅行経験を具体的に話せる |
 | 22 | [Japan's Summer Plans Change as Costs Rise](https://eikaiwa.dmm.com/app/daily-news/article/japans-summer-plans-change-as-costs-rise/m2rqAoV2EfGKSEsTg5Wrfg) | 5 | 旅行・家計 | 物価が休日の計画に与える影響や、節約方法を話せる |
 | 23 | [England to Reward People for Going for a Walk](https://eikaiwa.dmm.com/app/daily-news/article/england-to-reward-people-for-going-for-a-walk/0kGY2nyBEfGiTG827KIIqw) | 6 | 健康・制度 | よく歩くか、報酬が行動を変えるかを自分の生活から答えられる |
-| 24 | [Dogs Can Read Human Emotions, Study Finds](https://eikaiwa.dmm.com/app/daily-news/article/dogs-can-read-human-emotions-study-finds/KhW_hJdREfGxKz_MlXw2Fg) | 7 | ペット・科学 | 動物との体験や、犬が人の気持ちを理解すると思うかを話せる |
+| 24 | [The 'Gen Alpha Melody': Why New Songs Sound the Same](https://eikaiwa.dmm.com/app/daily-news/article/the-gen-alpha-melody-why-new-songs-sound-the-same/W_JlnpZvEfGo1wuf9mkbMA) | 7 | 音楽・ネット文化 | 最近の曲が似て聞こえるか、SNSと音楽の関係を話せる |
 | 25 | [Remote Work Making Americans Lonelier — Report](https://eikaiwa.dmm.com/app/daily-news/article/remote-work-making-americans-lonelier-report/eYFummQiEfG0zN9xEcT2HA) | 8 | 仕事・生活 | 在宅勤務の長所・短所や、同僚との交流について意見を言える |
 | 26 | [40% in US Say Kids Should Learn More Languages](https://eikaiwa.dmm.com/app/daily-news/article/40-in-us-say-kids-should-learn-more-languages/Ar08SpaFEfGwbesQN0gQ2Q) | 4 | 言語・教育 | 学びたい言語や子どもの語学教育について話せる |
 | 27 | [Why Good Posture Is Important](https://eikaiwa.dmm.com/app/daily-news/article/why-good-posture-is-important/eoa9mpG4EfGhQGPZSZ1yoA) | 4 | 健康・生活 | 姿勢の癖や改善方法を自分の生活から話せる |
@@ -65,7 +65,7 @@ python3 collect_daily_news.py --all-pages --pretty --output daily_news_articles.
 | 47 | [US Remote Work Increased in 2025](https://eikaiwa.dmm.com/app/daily-news/article/us-remote-work-increased-in-2025/e-kRoHmVEfG_X3em4ZTl4g) | 5 | 仕事・生活 | 在宅勤務と出社のどちらが合うか比較できる |
 | 48 | [New Sleeper Train Connects Tokyo to Aomori](https://eikaiwa.dmm.com/app/daily-news/article/new-sleeper-train-connects-tokyo-to-aomori/6OdSqmmPEfGC9usLg9r5qw) | 5 | 旅行・鉄道 | 寝台列車に乗りたいか、移動手段の好みを話せる |
 | 49 | [The Mistakes Travelers Make When Visiting Japan](https://eikaiwa.dmm.com/app/daily-news/article/the-mistakes-travelers-make-when-visiting-japan/Whg9WGDbEfGAkT9i9gOiLw) | 5 | 旅行・日本文化 | 外国人旅行者への助言を日本の経験から話せる |
-| 50 | [Survey Finds Japan's Most Popular Pet Names](https://eikaiwa.dmm.com/app/daily-news/article/survey-finds-japans-most-popular-pet-names/2LYeGkNeEe--lWu54OZ3tA) | 5 | ペット・文化 | ペットの名前や名付け方について気軽に答えられる |
+| 50 | [Make Food from Ponyo with This Studio Ghibli Cookbook](https://eikaiwa.dmm.com/app/daily-news/article/make-food-from-ponyo-with-this-studio-ghibli-cookbook/nN-ggmAXEfGQoU89dxxpdA) | 5 | アニメ・食 | ジブリ作品や、作品に登場する料理を再現したいか話せる |
 | 51 | [Many Americans Choose Sleep over Plans with Friends](https://eikaiwa.dmm.com/app/daily-news/article/many-americans-choose-sleep-over-plans-with-friends/X6HU5l6hEfGAUAvF17libg) | 5 | 生活・人間関係 | 睡眠と友人との予定のどちらを優先するか話せる |
 | 52 | [Lawson Opens New 'Mini-Supermarkets'](https://eikaiwa.dmm.com/app/daily-news/article/lawson-opens-new-mini-supermarkets/ORA2Cl2eEfGh1Gt0oqDaBw) | 5 | 買い物・生活 | コンビニとスーパーの使い分けを説明できる |
 | 53 | [Japan Will Soon Have a Pokemon-Themed Airport](https://eikaiwa.dmm.com/app/daily-news/article/japan-will-soon-have-a-pokemon-themed-airport/I5VAlFOuEfGr7iNfU7WMew) | 5 | 旅行・娯楽 | テーマ空港を利用したいか、好きな作品も話せる |
@@ -123,6 +123,8 @@ python3 collect_daily_news.py --all-pages --pretty --output daily_news_articles.
 
 - Level 4〜8を各20件にし、難易度が一部に偏らないようにする
 - コンビニ、買い物、スマホ、食事、仕事、旅行、防災など、日常と接点がある題材を優先する
+- スマホや家電など普段使う製品、アニメ・ゲーム・音楽などのサブカル系も積極的に含める
+- ペットを飼っている経験が前提になる記事は候補から外す
 - 専門知識がなくても、自分の経験、日本との比較、賛否と理由で答えられるDiscussionを選ぶ
 - 本文が多少難しくても、Discussionの質問を読んだときに具体例を思いつける記事は候補に含める
 - 過去に良かった記事は好みを判断する一例として使い、その記事自体を優先する理由にはしない
