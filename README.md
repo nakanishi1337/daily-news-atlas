@@ -12,119 +12,126 @@ python3 collect_daily_news.py --all-pages --pretty --output daily_news_articles.
 
 ## レッスン候補
 
-記事本文の難しさよりも、Discussionで自分の経験や身近な日本の状況を話しやすいかを重視しています。Level 4〜8から各20件、合計100件を選んでいます。特におすすめの25件を上位に置き、26件目以降はLevel順です。
+**今の生活・習慣・身の回りの事実を、そのまま説明して会話が成り立つこと**を最優先にしています。「何を・いつ・どこで・どのくらい・どうやって」に答えられる題材を選び、思い出や特別なエピソードを探す質問、理由や賛否を組み立てる質問の優先度を下げています。
 
-| # | 記事 | Level | ジャンル | Discussionで話しやすいポイント |
+部活動、高級みかん、睡眠、iPhone、ソウル観光、シーツ交換、キムチ、職場の服装、二日酔い、夕食の分担という既読10記事は、話題の幅の参考にしています。その10記事自体は候補から外しています。
+
+Level 4〜8から各20件、合計100件。最初の25件は、普段の事実だけで答え始めやすい題材をジャンルが偏らないように配置し、26件目以降はLevel順です。
+
+選定元は保存済みの [記事一覧](daily_news_articles.json)（最新の公開日時：2026年8月23日 UTC）です。以下はタイトルをもとに作った会話案で、**実際のDiscussionにこうした質問が多いことを確認した一覧ではありません**。記事を選ぶ際は実際の設問も確認してください。金額・頻度はおおよそでよく、「使わない」「特にない」も答えになります。
+
+| # | 記事 | Level | ジャンル | 事実だけで答え始められる質問例（独自の会話案） |
 |---:|---|:---:|---|---|
-| 1 | [What Makes Japanese Customer Service Unique](https://eikaiwa.dmm.com/app/daily-news/article/what-makes-japanese-customer-service-unique/CQOvTIbdEfGeoyMgtWOy6Q) | 4 | 日本文化・サービス | 日本で受けた接客や海外との違いを、身近な例で説明できる |
-| 2 | [Why Tourists Love Foreign Supermarkets](https://eikaiwa.dmm.com/app/daily-news/article/why-tourists-love-foreign-supermarkets/OnFdcJgyEfGVtH8zH3DSHQ) | 7 | 旅行・買い物 | 旅行先のスーパー、日本との違い、買いたい商品について答えやすい |
-| 3 | [Should Restaurants Have 'Adults Only' Areas?](https://eikaiwa.dmm.com/app/daily-news/article/should-restaurants-have-adults-only-areas/eLHRfltzEfGH3JtuE5Vfeg) | 5 | 食・社会 | レストランで重視することや、大人専用エリアへの賛否を話せる |
-| 4 | [Japan's Convenience Stores Ready to Help After Disasters](https://eikaiwa.dmm.com/app/daily-news/article/japans-convenience-stores-ready-to-help-after-disasters/dk4USlCAEfGNjhczHT6-2A) | 7 | 防災・生活 | 防災の備えと普段使うコンビニを、自分の経験から具体的に話せる |
-| 5 | [Japanese Workers Tired of Unwritten Office Rules](https://eikaiwa.dmm.com/app/daily-news/article/japanese-workers-tired-of-unwritten-office-rules/s2HpSpvwEfGwqc_l8OMy-g) | 6 | 仕事・日本社会 | 職場の暗黙のルールや、変えたい習慣を自分の経験から話せる |
-| 6 | [How Smartphone Use Is Affecting Our Bodies](https://eikaiwa.dmm.com/app/daily-news/article/how-smartphone-use-is-affecting-our-bodies/p8ApennNEfGM5Q-NWesaPg) | 8 | 健康・テクノロジー | 毎日のスマホ利用、姿勢、利用時間を自分の習慣に結びつけられる |
-| 7 | [Three 'Rules' to Help You Get a Good Sleep](https://eikaiwa.dmm.com/app/daily-news/article/three-rules-to-help-you-get-a-good-sleep/cnPUAFf_EfGquNuUAbHQpw) | 4 | 健康・生活習慣 | 睡眠時間、寝る前の習慣、よく眠る工夫をそのまま話題にできる |
-| 8 | [Osaka Restaurant Adds Sushi Pizza to Its Menu](https://eikaiwa.dmm.com/app/daily-news/article/osaka-restaurant-adds-sushi-pizza-to-its-menu/GnCjwmLrEfGkX7PQPazHOg) | 5 | 食・新商品 | 食べてみたいか、好きな変わり種料理は何かを気軽に話せる |
-| 9 | [S. Korean Program Rewards People for Exercise](https://eikaiwa.dmm.com/app/daily-news/article/s-korean-program-rewards-people-for-exercise/OURceJJ4EfGhfo-Z8ZmXUQ) | 6 | 健康・制度 | 運動習慣や、ご褒美があれば続けやすいかを考えられる |
-| 10 | [More Clothing Brands Offering Repair Services](https://eikaiwa.dmm.com/app/daily-news/article/more-clothing-brands-offering-repair-services/9XjAopVQEfGpyTNNXjaStA) | 8 | 買い物・環境 | 服を修理するか買い替えるか、価格や環境面から意見を言える |
-| 11 | [Top Tips to Reduce Your Smartphone Use](https://eikaiwa.dmm.com/app/daily-news/article/top-tips-to-reduce-your-smartphone-use/CICFOE_bEfGTsx_CvC6R_g) | 4 | 生活習慣・テクノロジー | スマホを使う時間と、実行できそうな対策について話せる |
-| 12 | [Clothes Top List of Online Returns — Survey](https://eikaiwa.dmm.com/app/daily-news/article/clothes-top-list-of-online-returns-survey/DdqePmLlEfGNW1dCM5Sabw) | 5 | 買い物・生活 | 通販での失敗や返品経験、店で買う場合との違いを話せる |
-| 13 | [Gen Z Adults Are Spending Their Weekends at Home](https://eikaiwa.dmm.com/app/daily-news/article/gen-z-adults-are-spending-their-weekends-at-home/HW8OGpFxEfGuHE_W1tkkiw) | 6 | 生活・世代 | 理想の週末や、外出と家で過ごす時間の好みを答えられる |
-| 14 | [New Flip Phone Made to Do 'as Little as Possible'](https://eikaiwa.dmm.com/app/daily-news/article/new-flip-phone-made-to-do-as-little-as-possible/k_io6o0jEfGdQO-6wcDhdw) | 7 | テクノロジー・生活 | 多機能なスマホが本当に必要か、自分の使い方から考えられる |
-| 15 | [Why Do We Get Grumpy in Hot Weather?](https://eikaiwa.dmm.com/app/daily-news/article/why-do-we-get-grumpy-in-hot-weather/VWAuanTREfGJuf9eBBU6LQ) | 8 | 健康・季節 | 暑さによる気分や行動の変化、夏の対策を実体験から答えられる |
-| 16 | [What Is 'Comfort Food,' and Why Do We Love It?](https://eikaiwa.dmm.com/app/daily-news/article/what-is-comfort-food-and-why-do-we-love-it/bjzf_iR9EfGPjzsMvpCEwQ) | 4 | 食・文化 | 自分にとってのcomfort foodと、それを食べる場面を説明できる |
-| 17 | [Fewer than 10,000 Bookstores Remain in Japan](https://eikaiwa.dmm.com/app/daily-news/article/fewer-than-10000-bookstores-remain-in-japan/Gqm5EGplEfGMko8qjCGmig) | 5 | 本・地域社会 | 本をどこで買うか、書店が地域に必要かを自分の習慣から話せる |
-| 18 | [74% of US Consumers Have Used AI to Shop](https://eikaiwa.dmm.com/app/daily-news/article/74-of-us-consumers-have-used-ai-to-shop/3_NPoomVEfGg0JPJm6pwAw) | 6 | AI・買い物 | 買い物にAIを使いたいか、店員やレビューとの比較ができる |
-| 19 | [Coffee Cup Texture May Change What You Taste](https://eikaiwa.dmm.com/app/daily-news/article/coffee-cup-texture-may-change-what-you-taste/0B6w8nS1EfGSDZfW8vCwHg) | 7 | 食・心理 | 好きな飲み物やカップへのこだわりを、日常の経験から話せる |
-| 20 | [New Pixel Phones Betting on AI to Tempt Buyers](https://eikaiwa.dmm.com/app/daily-news/article/new-pixel-phones-betting-on-ai-to-tempt-buyers/VIBC5JboEfGRlKv74RAPtA) | 8 | スマホ・AI | 新しいスマホに欲しい機能や、買い替えの基準を話せる |
-| 21 | [Hotel, Airbnb, Hostel: Where to Stay on Holiday](https://eikaiwa.dmm.com/app/daily-news/article/hotel-airbnb-hostel-where-to-stay-on-holiday/SmcaCCbqEfGZoL-1li9wuQ) | 4 | 旅行・宿泊 | 宿泊先を選ぶ基準や過去の旅行経験を具体的に話せる |
-| 22 | [Japan's Summer Plans Change as Costs Rise](https://eikaiwa.dmm.com/app/daily-news/article/japans-summer-plans-change-as-costs-rise/m2rqAoV2EfGKSEsTg5Wrfg) | 5 | 旅行・家計 | 物価が休日の計画に与える影響や、節約方法を話せる |
-| 23 | [England to Reward People for Going for a Walk](https://eikaiwa.dmm.com/app/daily-news/article/england-to-reward-people-for-going-for-a-walk/0kGY2nyBEfGiTG827KIIqw) | 6 | 健康・制度 | よく歩くか、報酬が行動を変えるかを自分の生活から答えられる |
-| 24 | [The 'Gen Alpha Melody': Why New Songs Sound the Same](https://eikaiwa.dmm.com/app/daily-news/article/the-gen-alpha-melody-why-new-songs-sound-the-same/W_JlnpZvEfGo1wuf9mkbMA) | 7 | 音楽・ネット文化 | 最近の曲が似て聞こえるか、SNSと音楽の関係を話せる |
-| 25 | [Remote Work Making Americans Lonelier — Report](https://eikaiwa.dmm.com/app/daily-news/article/remote-work-making-americans-lonelier-report/eYFummQiEfG0zN9xEcT2HA) | 8 | 仕事・生活 | 在宅勤務の長所・短所や、同僚との交流について意見を言える |
-| 26 | [40% in US Say Kids Should Learn More Languages](https://eikaiwa.dmm.com/app/daily-news/article/40-in-us-say-kids-should-learn-more-languages/Ar08SpaFEfGwbesQN0gQ2Q) | 4 | 言語・教育 | 学びたい言語や子どもの語学教育について話せる |
-| 27 | [Why Good Posture Is Important](https://eikaiwa.dmm.com/app/daily-news/article/why-good-posture-is-important/eoa9mpG4EfGhQGPZSZ1yoA) | 4 | 健康・生活 | 姿勢の癖や改善方法を自分の生活から話せる |
-| 28 | [The Best Ways to Politely Correct Someone](https://eikaiwa.dmm.com/app/daily-news/article/the-best-ways-to-politely-correct-someone/9gnXHIwyEfGlHS9-QbZ03g) | 4 | コミュニケーション | 間違いをどう伝えるか、実体験をもとに答えられる |
-| 29 | [Many Americans Judge People by Their Phone Wallpaper](https://eikaiwa.dmm.com/app/daily-news/article/many-americans-judge-people-by-their-phone-wallpaper/h14pJoG_EfGuAD9xBgVk7w) | 4 | 心理・スマホ | 自分の壁紙や第一印象について気軽に話せる |
-| 30 | [Work Makes It Hard to Be a Good Parent — Survey](https://eikaiwa.dmm.com/app/daily-news/article/work-makes-it-hard-to-be-a-good-parent-survey/_aHp0nOXEfGVhdf1p8JboQ) | 4 | 仕事・家庭 | 仕事と家庭の両立や支援策について考えられる |
-| 31 | [The Best Foods to Eat Before Running](https://eikaiwa.dmm.com/app/daily-news/article/the-best-foods-to-eat-before-running/JIVlNm5AEfGRLbsXg7Jmng) | 4 | 食・運動 | 運動前の食事や普段の運動習慣を話せる |
-| 32 | [40% of Older Japanese Adults Want to Work](https://eikaiwa.dmm.com/app/daily-news/article/40-of-older-japanese-adults-want-to-work/D2U6EmhrEfGoMOOFnLqK7Q) | 4 | 仕事・日本社会 | 何歳まで働きたいか、仕事の意味を話せる |
-| 33 | [Expert Tips to Keep Your Home Tidy](https://eikaiwa.dmm.com/app/daily-news/article/expert-tips-to-keep-your-home-tidy/nMF6KF3bEfGsRF8N5OJnOA) | 4 | 住まい・生活 | 片付けの習慣や苦手な家事について答えやすい |
-| 34 | [Why Walking Is So Good for Our Health](https://eikaiwa.dmm.com/app/daily-news/article/why-walking-is-so-good-for-our-health/QPtDeFZGEfG9vL_96zie6g) | 4 | 健康・運動 | 普段どれくらい歩くか、続ける工夫を話せる |
-| 35 | [How to Find Time for Yourself When Life Is Busy](https://eikaiwa.dmm.com/app/daily-news/article/how-to-find-time-for-yourself-when-life-is-busy/YYqffk1WEfG84kfZ_mRpkQ) | 4 | 生活・心理 | 忙しい日の自分時間や優先順位について話せる |
-| 36 | [What Is 'Slow Travel' and Why Should We Do It?](https://eikaiwa.dmm.com/app/daily-news/article/what-is-slow-travel-and-why-should-we-do-it/NTPiVPaVEfC3XytKdYD3dw) | 4 | 旅行 | 短い旅行と長期滞在の好みを比較できる |
-| 37 | [How to Plan the Perfect Day Trip](https://eikaiwa.dmm.com/app/daily-news/article/how-to-plan-the-perfect-day-trip/AiZ27kNQEfGV2N9fEVqZwQ) | 4 | 旅行 | 理想の日帰り旅行を具体的に組み立てられる |
-| 38 | [How to Avoid Stress When You Have a Deadline](https://eikaiwa.dmm.com/app/daily-news/article/how-to-avoid-stress-when-you-have-a-deadline/BSV62j2qEfGytb_3FDH3ew) | 4 | 仕事・心理 | 締切への対処法や自分の仕事の進め方を話せる |
-| 39 | [A 'Boring' Routine Could Be Good for Your Health](https://eikaiwa.dmm.com/app/daily-news/article/a-boring-routine-could-be-good-for-your-health/XTQhNDggEfGy0KNjP3B99w) | 4 | 健康・生活習慣 | 毎日のルーティンと退屈の価値を話せる |
-| 40 | [How to Start Exercising and Make It a Habit](https://eikaiwa.dmm.com/app/daily-news/article/how-to-start-exercising-and-make-it-a-habit/D4mJsDHbEfGliX9MeXQA6Q) | 4 | 健康・運動 | 始めやすい運動と習慣化の工夫を答えられる |
-| 41 | [Driverless Taxis Are Coming to European Cities](https://eikaiwa.dmm.com/app/daily-news/article/driverless-taxis-are-coming-to-european-cities/33kq5pwkEfGS4I-inJGX6A) | 5 | 交通・テクノロジー | 無人タクシーに乗りたいか、安全性も含め話せる |
-| 42 | [Ticket Prices Rising at Japan's Amusement Parks](https://eikaiwa.dmm.com/app/daily-news/article/ticket-prices-rising-at-japans-amusement-parks/7m8aYpVMEfGOA5f8OMEm1A) | 5 | 娯楽・家計 | 遊園地に払える金額や値上げへの考えを話せる |
-| 43 | [1 in 4 Japanese Think AI Will Replace Friends](https://eikaiwa.dmm.com/app/daily-news/article/1-in-4-japanese-think-ai-will-replace-friends/tuPQ6JBLEfGyX7PO0WcTOg) | 5 | AI・人間関係 | AIが友人になれるか、自分の価値観で答えられる |
-| 44 | [Japan's Paternity Leave Rate Topped 50% in 2025](https://eikaiwa.dmm.com/app/daily-news/article/japans-paternity-leave-rate-topped-50-in-2025/-HcesJABEfGAPnNXsZZjXg) | 5 | 仕事・家庭 | 育休の取りやすさや職場の支援について話せる |
-| 45 | [Japan's Food Waste Falls to Record Low](https://eikaiwa.dmm.com/app/daily-news/article/japans-food-waste-falls-to-record-low/3ardwHbEEfGrTGebcGpFYw) | 5 | 食・環境 | 家庭で食品を捨てない工夫を具体的に話せる |
-| 46 | [The Ideal Movie Length Is 88 Minutes — Survey](https://eikaiwa.dmm.com/app/daily-news/article/the-ideal-movie-length-is-88-minutes-survey/1N3EUnx2EfGN-jMm4Eo_fA) | 5 | 映画・娯楽 | 好きな映画の長さや集中できる時間を話せる |
-| 47 | [US Remote Work Increased in 2025](https://eikaiwa.dmm.com/app/daily-news/article/us-remote-work-increased-in-2025/e-kRoHmVEfG_X3em4ZTl4g) | 5 | 仕事・生活 | 在宅勤務と出社のどちらが合うか比較できる |
-| 48 | [New Sleeper Train Connects Tokyo to Aomori](https://eikaiwa.dmm.com/app/daily-news/article/new-sleeper-train-connects-tokyo-to-aomori/6OdSqmmPEfGC9usLg9r5qw) | 5 | 旅行・鉄道 | 寝台列車に乗りたいか、移動手段の好みを話せる |
-| 49 | [The Mistakes Travelers Make When Visiting Japan](https://eikaiwa.dmm.com/app/daily-news/article/the-mistakes-travelers-make-when-visiting-japan/Whg9WGDbEfGAkT9i9gOiLw) | 5 | 旅行・日本文化 | 外国人旅行者への助言を日本の経験から話せる |
-| 50 | [Make Food from Ponyo with This Studio Ghibli Cookbook](https://eikaiwa.dmm.com/app/daily-news/article/make-food-from-ponyo-with-this-studio-ghibli-cookbook/nN-ggmAXEfGQoU89dxxpdA) | 5 | アニメ・食 | ジブリ作品や、作品に登場する料理を再現したいか話せる |
-| 51 | [Many Americans Choose Sleep over Plans with Friends](https://eikaiwa.dmm.com/app/daily-news/article/many-americans-choose-sleep-over-plans-with-friends/X6HU5l6hEfGAUAvF17libg) | 5 | 生活・人間関係 | 睡眠と友人との予定のどちらを優先するか話せる |
-| 52 | [Lawson Opens New 'Mini-Supermarkets'](https://eikaiwa.dmm.com/app/daily-news/article/lawson-opens-new-mini-supermarkets/ORA2Cl2eEfGh1Gt0oqDaBw) | 5 | 買い物・生活 | コンビニとスーパーの使い分けを説明できる |
-| 53 | [Japan Will Soon Have a Pokemon-Themed Airport](https://eikaiwa.dmm.com/app/daily-news/article/japan-will-soon-have-a-pokemon-themed-airport/I5VAlFOuEfGr7iNfU7WMew) | 5 | 旅行・娯楽 | テーマ空港を利用したいか、好きな作品も話せる |
-| 54 | [Japanese Prefecture to Pay People to Use Dating Apps](https://eikaiwa.dmm.com/app/daily-news/article/japanese-prefecture-to-pay-people-to-use-dating-apps/Hq3MHET_EfGkTVdkSE-iUA) | 5 | 恋愛・制度 | 自治体の婚活支援やアプリへの賛否を話せる |
-| 55 | [Why MP3 Players Are Making a Comeback](https://eikaiwa.dmm.com/app/daily-news/article/why-mp3-players-are-making-a-comeback/urEjbDrREfGboe_DnO1TTg) | 5 | 音楽・テクノロジー | 音楽を聴く機器やスマホとの違いを話せる |
-| 56 | [South Korea, US Are Japan's Top Fashion Influences](https://eikaiwa.dmm.com/app/daily-news/article/south-korea-us-are-japans-top-fashion-influences/nVUclJsZEfG40r-t8yJDYg) | 6 | ファッション・文化 | 服選びや海外から受ける影響について話せる |
-| 57 | [Laptops Now More Important for Students than Books](https://eikaiwa.dmm.com/app/daily-news/article/laptops-now-more-important-for-students-than-books/62LRiJseEfG17QNeO8ErFw) | 6 | 教育・テクノロジー | 紙とパソコンのどちらで学びやすいか比較できる |
-| 58 | [Japanese People Spend Less Time and Money on Leisure](https://eikaiwa.dmm.com/app/daily-news/article/japanese-people-spend-less-time-and-money-on-leisure/nGRelpqpEfGGf_OWMu3UBg) | 6 | 娯楽・家計 | 余暇の過ごし方や趣味への出費を話せる |
-| 59 | [Most US Families Have One Parent in Charge of Dinner](https://eikaiwa.dmm.com/app/daily-news/article/most-us-families-have-one-parent-in-charge-of-dinner/_Pb9WpaiEfG89ueiII8Bhw) | 6 | 食・家庭 | 家庭で誰が料理するか、役割分担を話せる |
-| 60 | [Which Workers Feel the Most Stress?](https://eikaiwa.dmm.com/app/daily-news/article/which-workers-feel-the-most-stress/aqqFFJc1EfGqIuOW521luw) | 6 | 仕事・健康 | 仕事のストレス要因と解消法を話せる |
-| 61 | [Japanese Choosing 'Coolcations' for Summer Trips](https://eikaiwa.dmm.com/app/daily-news/article/japanese-choosing-coolcations-for-summer-trips/mESeWpYUEfGijadPgGYgHA) | 6 | 旅行・季節 | 暑い時期にどこへ旅行したいか答えられる |
-| 62 | [Robot Chef Cooks Noodles in Just 90 Seconds](https://eikaiwa.dmm.com/app/daily-news/article/robot-chef-cooks-noodles-in-just-90-seconds/KJqy1JVQEfGF01cAUoqZeA) | 6 | 食・ロボット | ロボット料理を食べたいか、店での役割を話せる |
-| 63 | [Wobbly Beer Glass Forces You to Drink Water](https://eikaiwa.dmm.com/app/daily-news/article/wobbly-beer-glass-forces-you-to-drink-water/ca8y6JX-EfGzxMdwj23Mvw) | 6 | 飲み物・アイデア商品 | 行動を変える商品が有効か楽しく議論できる |
-| 64 | [Would You Say 'I Do' to These Unusual Wedding Traditions?](https://eikaiwa.dmm.com/app/daily-news/article/would-you-say-i-do-to-these-unusual-wedding-traditions/ilh0tl7bEe2DGZOuFcnsAw) | 6 | 文化・結婚 | 結婚式の習慣や好みを各国と比較できる |
-| 65 | [Many Japanese Workers Consider Quitting Their Jobs](https://eikaiwa.dmm.com/app/daily-news/article/many-japanese-workers-consider-quitting-their-jobs/JBzARI8GEfGU_kPq34g3iA) | 6 | 仕事・日本社会 | 仕事を辞める理由や良い職場の条件を話せる |
-| 66 | [Timing of Meals May Affect Brain Health](https://eikaiwa.dmm.com/app/daily-news/article/timing-of-meals-may-affect-brain-health/WKNPlIxfEfG6vdN1CFbl9Q) | 6 | 食・健康 | 食事の時間や生活リズムを振り返って話せる |
-| 67 | [City Hall in Japan Lets Staff Wear T-Shirts](https://eikaiwa.dmm.com/app/daily-news/article/city-hall-in-japan-lets-staff-wear-t-shirts/8EzAKIY9EfGgyG_RHvKOSg) | 6 | 仕事・服装 | 職場の服装ルールや快適さについて話せる |
-| 68 | [Working from Home May Increase Obesity Risk](https://eikaiwa.dmm.com/app/daily-news/article/working-from-home-may-increase-obesity-risk/gVp-PIPoEfGwVTP9B-YQXw) | 6 | 仕事・健康 | 在宅勤務中の運動や食生活について話せる |
-| 69 | [Japanese Workers Pay Services to Ask for Leave](https://eikaiwa.dmm.com/app/daily-news/article/japanese-workers-pay-services-to-ask-for-leave/gW_SBIRhEfGTL5czH0GjzQ) | 6 | 仕事・文化 | 休みを頼みやすい職場とは何かを考えられる |
-| 70 | [Read, Don't Talk: What Are Silent Reading Clubs?](https://eikaiwa.dmm.com/app/daily-news/article/read-dont-talk-what-are-silent-reading-clubs/50eetm_IEfGRo1unW0a3pA) | 6 | 本・コミュニティ | 読書会に参加したいか、読書習慣を話せる |
-| 71 | ['FIRE' Movement Helps People Retire Early](https://eikaiwa.dmm.com/app/daily-news/article/fire-movement-helps-people-retire-early/ehAqxp0DEfGN33vEy60xtw) | 7 | 仕事・お金 | 節約や理想の退職年齢を価値観に結びつけられる |
-| 72 | [Having a Sweet Tooth Linked to Safer Choices](https://eikaiwa.dmm.com/app/daily-news/article/having-a-sweet-tooth-linked-to-safer-choices/jtzwfpg_EfGY4otNip5-Uw) | 7 | 食・心理 | 甘い物の好みと性格が関係するか話せる |
-| 73 | [Feeding by Tourists Puts Japan's Rabbit Island at Risk](https://eikaiwa.dmm.com/app/daily-news/article/feeding-by-tourists-puts-japans-rabbit-island-at-risk/Cs_mFpwIEfGWDBPjCJBZEw) | 7 | 観光・動物 | 観光客のルールと動物保護について意見を言える |
-| 74 | [Amazon Expands Its Drone Delivery Service](https://eikaiwa.dmm.com/app/daily-news/article/amazon-expands-its-drone-delivery-service/BxsyGJxoEfGdiCMF5ejv7Q) | 7 | 買い物・テクノロジー | ドローン配送を利用したいか、利点と不安を話せる |
-| 75 | [Constantly Searching for Meaning Could Cause Burnout](https://eikaiwa.dmm.com/app/daily-news/article/constantly-searching-for-meaning-could-cause-burnout/fA1QWpaIEfGpSYeBCqM8-g) | 7 | 仕事・心理 | 仕事の意味と燃え尽きについて自分の考えを話せる |
-| 76 | [Five Things Happy Countries Have in Common](https://eikaiwa.dmm.com/app/daily-news/article/five-things-happy-countries-have-in-common/vNOrupWjEfG5kyu-hDueBg) | 7 | 社会・幸福 | 幸せな国の条件や日本の良い点を考えられる |
-| 77 | [Airline to Charge Passengers to Use Overhead Lockers](https://eikaiwa.dmm.com/app/daily-news/article/airline-to-charge-passengers-to-use-overhead-lockers/w__-KJGVEfGuDQuKR7becA) | 7 | 旅行・料金 | 飛行機の追加料金にどこまで払えるか話せる |
-| 78 | [How to Make Time for 'Deep Work'](https://eikaiwa.dmm.com/app/daily-news/article/how-to-make-time-for-deep-work/3E1LiLRHEfCW3G8Ni9xBrQ) | 7 | 仕事・集中 | 集中を妨げるものや自分の仕事環境を話せる |
-| 79 | [Is Social Media Ruining the Joy of Travel?](https://eikaiwa.dmm.com/app/daily-news/article/is-social-media-ruining-the-joy-of-travel/s0qbFoaBEfGwjKvz0gA7Ag) | 7 | 旅行・SNS | 旅行中の投稿や写真の撮り方について話せる |
-| 80 | [Just 10 Minutes of Forest Birdsong May Relieve Stress](https://eikaiwa.dmm.com/app/daily-news/article/just-10-minutes-of-forest-birdsong-may-relieve-stress/Rf_CbItdEfGL1GeF-PY5dw) | 7 | 自然・健康 | 好きな自然の音やストレス解消法を話せる |
-| 81 | [Older Tokyo Residents Increasingly Enjoy Time Alone](https://eikaiwa.dmm.com/app/daily-news/article/older-tokyo-residents-increasingly-enjoy-time-alone/3vbiSonpEfGnwK9bSkDzJA) | 7 | 生活・社会 | 一人時間の楽しみ方や孤独との違いを話せる |
-| 82 | [Why Forgetting Your Phone Might Help Your Memory](https://eikaiwa.dmm.com/app/daily-news/article/why-forgetting-your-phone-might-help-your-memory/JUz38InxEfG_b69PXi9CQg) | 7 | スマホ・健康 | スマホなしで過ごせるか、記憶への影響を考えられる |
-| 83 | [Monitoring Employees Doesn't Improve Performance](https://eikaiwa.dmm.com/app/daily-news/article/monitoring-employees-doesnt-improve-performance/tKLQ8IbvEfG5unMzjAnsew) | 7 | 仕事・管理 | 職場での監視と信頼のどちらが有効か話せる |
-| 84 | [From Practical to Fashionable: Casio's 'Cheap Watches'](https://eikaiwa.dmm.com/app/daily-news/article/from-practical-to-fashionable-casios-cheap-watches/yK-MEH6_EfG0Fg_bxs9Plw) | 7 | ファッション・商品 | 腕時計を使うか、安い商品の魅力を話せる |
-| 85 | [Saving Money Is Easier with Goals — US Survey](https://eikaiwa.dmm.com/app/daily-news/article/saving-money-is-easier-with-goals-us-survey/wnmPkG_cEfGqX6f0IzXWng) | 7 | お金・生活 | 貯金の目的や続ける工夫を具体的に話せる |
-| 86 | [Some US Colleges Now Offer 'Influencer' Degrees](https://eikaiwa.dmm.com/app/daily-news/article/some-us-colleges-now-offer-influencer-degrees/_7zrnJe8EfGCpsvFKz2b0A) | 8 | 教育・SNS | インフルエンサーに大学教育が必要か話せる |
-| 87 | [AI Uptake Remains Slow in Japan](https://eikaiwa.dmm.com/app/daily-news/article/ai-uptake-remains-slow-in-japan/MyhazpgsEfGjCWfqbre3qQ) | 8 | AI・仕事 | 日本でAI利用が遅い理由や自分の利用法を話せる |
-| 88 | [Kellogg to Remove Artificial Colors from Its Cereals](https://eikaiwa.dmm.com/app/daily-news/article/kellogg-to-remove-artificial-colors-from-its-cereals/3TrHEpJbEfGdNe8mtIXc9w) | 8 | 食・健康 | 食品の色と安全性のどちらを重視するか話せる |
-| 89 | [Cage-Free Eggs May Have Worse Environmental Impact](https://eikaiwa.dmm.com/app/daily-news/article/cage-free-eggs-may-have-worse-environmental-impact/EZ9M4JEHEfGjW8PkL2mQZA) | 8 | 食・環境 | 動物福祉と環境負荷の優先順位を考えられる |
-| 90 | [Research Finds Risks of Eating Too Much Protein](https://eikaiwa.dmm.com/app/daily-news/article/research-finds-risks-of-eating-too-much-protein/YC2PlJEVEfGIkde5LDymJA) | 8 | 食・健康 | 普段の食事や健康情報との付き合い方を話せる |
-| 91 | [Food Tax Cut Approved by Japanese Cabinet](https://eikaiwa.dmm.com/app/daily-news/article/food-tax-cut-approved-by-japanese-cabinet/57jHmpInEfGjSL-MIO2eEg) | 8 | 食・経済 | 食料品の税金や家計への影響について話せる |
-| 92 | [Coffee May Protect Your Heart — Energy Drinks Don't](https://eikaiwa.dmm.com/app/daily-news/article/coffee-may-protect-your-heart-energy-drinks-dont/ikLqrIupEfGM2otz6tj-vQ) | 8 | 飲み物・健康 | コーヒーとエナジードリンクの習慣を比較できる |
-| 93 | [Your Birth Order May Affect Your Health](https://eikaiwa.dmm.com/app/daily-news/article/your-birth-order-may-affect-your-health/j3B1EpWzEfG5w39X3gK_Jw) | 8 | 家族・健康 | 兄弟姉妹での立場や性格の違いを話せる |
-| 94 | [Ultrarare Nintendo Cartridges Found After Years in Storage](https://eikaiwa.dmm.com/app/daily-news/article/ultrarare-nintendo-cartridges-found-after-years-in-storage/p8co0JrSEfGjUY98Ukdi6A) | 8 | ゲーム・収集 | 古いゲームやコレクションの価値について話せる |
-| 95 | [United Airlines Announces New Empty Middle Seat Row](https://eikaiwa.dmm.com/app/daily-news/article/united-airlines-announces-new-empty-middle-seat-row/5Pq6FoEcEfG1_kslPNfZqA) | 8 | 旅行・サービス | 快適な座席に追加料金を払うか考えられる |
-| 96 | [Algorithms May Be Making Your Media Consumption Boring](https://eikaiwa.dmm.com/app/daily-news/article/algorithms-may-be-making-your-media-consumption-boring/WhO3bGA0EfGQNAsu98pCvA) | 8 | メディア・AI | おすすめ機能で選択肢が狭まるか話せる |
-| 97 | [Mexico Passes Bill to Cut Workweek to 40 Hours](https://eikaiwa.dmm.com/app/daily-news/article/mexico-passes-bill-to-cut-workweek-to-40-hours/VSNrFGTsEfGV9MftrLIubQ) | 8 | 仕事・制度 | 理想の労働時間と生産性について話せる |
-| 98 | [Money Influencers' Advice Is Poor, But Users Still Listen](https://eikaiwa.dmm.com/app/daily-news/article/money-influencers-advice-is-poor-but-users-still-listen/BJq-flh5EfGIOFNfiNulgQ) | 8 | お金・SNS | ネットの金融情報をどこまで信用するか話せる |
-| 99 | [Could 'Ikigai' Help You Find Happiness?](https://eikaiwa.dmm.com/app/daily-news/article/could-ikigai-help-you-find-happiness/qqEcnn-zEeyDyy_GFWhtVg) | 8 | 日本文化・幸福 | 生きがいや日々の満足について自分の言葉で話せる |
-| 100 | [How Notifications Hurt Your Concentration](https://eikaiwa.dmm.com/app/daily-news/article/how-notifications-hurt-your-concentration/2gBv9Ce6EfG7QQ_dbT_vxw) | 8 | スマホ・集中 | 通知を切るか、集中を守る方法を話せる |
+| 1 | [People in Japan Are Eating Less Rice](https://eikaiwa.dmm.com/app/daily-news/article/people-in-japan-are-eating-less-rice/VAEwGFNOEfGaq_eqiKTpQw) | 5 | 食文化・暮らし | ご飯を一日何回食べる？／家で炊く？／米はどこで買う？ |
+| 2 | [Three 'Rules' to Help You Get a Good Sleep](https://eikaiwa.dmm.com/app/daily-news/article/three-rules-to-help-you-get-a-good-sleep/cnPUAFf_EfGquNuUAbHQpw) | 4 | 健康・生活習慣 | 何時に寝て起きる？／平日と休日で睡眠時間は違う？ |
+| 3 | [Expert Tips to Keep Your Home Tidy](https://eikaiwa.dmm.com/app/daily-news/article/expert-tips-to-keep-your-home-tidy/nMF6KF3bEfGsRF8N5OJnOA) | 4 | 住まい・生活 | 掃除は週に何回する？／洗濯物や本はどこにしまう？ |
+| 4 | [Apple Launches Rental Program for Its Products](https://eikaiwa.dmm.com/app/daily-news/article/apple-launches-rental-program-for-its-products/7GNvzIt3EfGYSF_xc_TgtQ) | 6 | 製品・買い物 | 今使っているスマホやパソコンは？／購入品かレンタルか？ |
+| 5 | [Japanese Workers Tired of Unwritten Office Rules](https://eikaiwa.dmm.com/app/daily-news/article/japanese-workers-tired-of-unwritten-office-rules/s2HpSpvwEfGwqc_l8OMy-g) | 6 | 仕事・日本社会 | 職場の服装は？／始業時刻は？／会議はどのくらいある？ |
+| 6 | [Lawson Opens New 'Mini-Supermarkets'](https://eikaiwa.dmm.com/app/daily-news/article/lawson-opens-new-mini-supermarkets/ORA2Cl2eEfGh1Gt0oqDaBw) | 5 | 買い物・生活 | コンビニとスーパーではそれぞれ何を買う？／近くにどちらがある？ |
+| 7 | [The Ideal Movie Length Is 88 Minutes — Survey](https://eikaiwa.dmm.com/app/daily-news/article/the-ideal-movie-length-is-88-minutes-survey/1N3EUnx2EfGN-jMm4Eo_fA) | 5 | 映画・娯楽 | 映画は家と映画館のどちらで見る？／月に何本くらい見る？ |
+| 8 | [Laptops Now More Important for Students than Books](https://eikaiwa.dmm.com/app/daily-news/article/laptops-now-more-important-for-students-than-books/62LRiJseEfG17QNeO8ErFw) | 6 | 教育・テクノロジー | 勉強には紙とパソコンのどちらを使う？／メモはどこに取る？ |
+| 9 | [From Practical to Fashionable: Casio's 'Cheap Watches'](https://eikaiwa.dmm.com/app/daily-news/article/from-practical-to-fashionable-casios-cheap-watches/yK-MEH6_EfG0Fg_bxs9Plw) | 7 | ファッション・商品 | 腕時計は着ける？／どのメーカー？／どこで時間を確認する？ |
+| 10 | [Three Fun, Tasty Ways to Get More Miso in Your Life!](https://eikaiwa.dmm.com/app/daily-news/article/three-fun-tasty-ways-to-get-more-miso-in-your-life/ilZ-Cm6AEfGyB-c5VMfVHg) | 8 | 料理・日本文化 | 味噌汁は週に何回飲む？／普段入れる具は？／即席も使う？ |
+| 11 | [Australians Are Using More Cash](https://eikaiwa.dmm.com/app/daily-news/article/australians-are-using-more-cash/VTFn5EKOEfGVBqvUA49VwQ) | 7 | 買い物・支払い | 普段の支払いは現金・カード・スマホのどれ？／現金は持ち歩く？ |
+| 12 | [Why MP3 Players Are Making a Comeback](https://eikaiwa.dmm.com/app/daily-news/article/why-mp3-players-are-making-a-comeback/urEjbDrREfGboe_DnO1TTg) | 5 | 音楽・テクノロジー | 音楽を聴く機器は？／曲は保存するか配信で聴くか？ |
+| 13 | [Gen Z Adults Are Spending Their Weekends at Home](https://eikaiwa.dmm.com/app/daily-news/article/gen-z-adults-are-spending-their-weekends-at-home/HW8OGpFxEfGuHE_W1tkkiw) | 6 | 生活・世代 | 休日は家で何をする？／外出する頻度は？ |
+| 14 | [What's Blocking Your Wi-Fi — and How to Fix It](https://eikaiwa.dmm.com/app/daily-news/article/whats-blocking-your-wi-fi-and-how-to-fix-it/efpNzIAmEfGqOu_luTjdqA) | 7 | ネット・住まい | 家ではWi-Fiを使う？／ルーターはどの部屋にある？ |
+| 15 | [Fewer than 10,000 Bookstores Remain in Japan](https://eikaiwa.dmm.com/app/daily-news/article/fewer-than-10000-bookstores-remain-in-japan/Gqm5EGplEfGMko8qjCGmig) | 5 | 本・地域社会 | 本はどこで買う？／近所に書店はある？／電子書籍も読む？ |
+| 16 | [Hotel, Airbnb, Hostel: Where to Stay on Holiday](https://eikaiwa.dmm.com/app/daily-news/article/hotel-airbnb-hostel-where-to-stay-on-holiday/SmcaCCbqEfGZoL-1li9wuQ) | 4 | 旅行・宿泊 | 宿の予約に使うサイトは？／普段はホテル・旅館などのどれを使う？ |
+| 17 | [Timing of Meals May Affect Brain Health](https://eikaiwa.dmm.com/app/daily-news/article/timing-of-meals-may-affect-brain-health/WKNPlIxfEfG6vdN1CFbl9Q) | 6 | 食・健康 | 朝・昼・夕食はそれぞれ何時？／間食はする？ |
+| 18 | [Solar-Powered Boat Stops Plastic Reaching the Sea](https://eikaiwa.dmm.com/app/daily-news/article/solar-powered-boat-stops-plastic-reaching-the-sea/3EHRgmnCEfGSS2-T1e_RGw) | 8 | 環境・発明 | ごみは何種類に分ける？／ペットボトルはどこに捨てる？ |
+| 19 | [The Best Foods to Try at 7-Eleven Japan](https://eikaiwa.dmm.com/app/daily-news/article/the-best-foods-to-try-at-7-eleven-japan/NUFgwM_iEfC14ifDstv8Kg) | 4 | 食・コンビニ | コンビニには週に何回行く？／よく買う食べ物は？ |
+| 20 | [Which Is Better: Wired or Wireless Headphones?](https://eikaiwa.dmm.com/app/daily-news/article/which-is-better-wired-or-wireless-headphones/UMNSyCMGEfGxDLPHVL0_Kw) | 7 | 音楽・製品 | イヤホンは有線か無線か？／いつ、何につないで使う？ |
+| 21 | [How Smartphone Use Is Affecting Our Bodies](https://eikaiwa.dmm.com/app/daily-news/article/how-smartphone-use-is-affecting-our-bodies/p8ApennNEfGM5Q-NWesaPg) | 8 | 健康・テクノロジー | スマホを一日何時間使う？／使うときは座っている？ |
+| 22 | [Coffee May Protect Your Heart — Energy Drinks Don't](https://eikaiwa.dmm.com/app/daily-news/article/coffee-may-protect-your-heart-energy-drinks-dont/ikLqrIupEfGM2otz6tj-vQ) | 8 | 飲み物・健康 | コーヒーは一日何杯？／エナジードリンクは飲む？ |
+| 23 | [Obon: Japan's Summer Festival of Spirits](https://eikaiwa.dmm.com/app/daily-news/article/obon-japans-summer-festival-of-spirits/5oLFbJVjEfGt4eNnLo7kUA) | 7 | 日本文化・行事 | お盆に仕事は休みになる？／地域ではどんな行事がある？ |
+| 24 | [97% of Asia Pacific Travelers Go Cashless When Traveling](https://eikaiwa.dmm.com/app/daily-news/article/97-of-asia-pacific-travelers-go-cashless-when-traveling/KKqirI-aEe6z44_Kay0uRw) | 8 | 旅行・支払い | 外出先では何で支払う？／交通系ICやスマホ決済を使う？ |
+| 25 | [Ultrarare Nintendo Cartridges Found After Years in Storage](https://eikaiwa.dmm.com/app/daily-news/article/ultrarare-nintendo-cartridges-found-after-years-in-storage/p8co0JrSEfGjUY98Ukdi6A) | 8 | ゲーム・収集 | 家にゲーム機はある？／ソフトはダウンロード版かパッケージ版か？ |
+| 26 | [Sweet, Bitter, Tart: Four Special Fruits from Japan](https://eikaiwa.dmm.com/app/daily-news/article/sweet-bitter-tart-four-special-fruits-from-japan/_m8xoverEfCNHePgAq8xMQ) | 4 | 食・買い物 | 普段買う果物は？／どこで買う？／だいたいいくら？ |
+| 27 | [How to Make Your Home Feel Brand New](https://eikaiwa.dmm.com/app/daily-news/article/how-to-make-your-home-feel-brand-new/vw5EVA5_EfGnP7PpRQiL0A) | 4 | 住まい・家事 | 部屋にどんな家具がある？／掃除に何を使う？ |
+| 28 | [What Makes Japanese Customer Service Unique](https://eikaiwa.dmm.com/app/daily-news/article/what-makes-japanese-customer-service-unique/CQOvTIbdEfGeoyMgtWOy6Q) | 4 | 日本文化・サービス | 普段行く店はセルフレジ？／袋詰めは誰がする？ |
+| 29 | [Top Tips to Reduce Your Smartphone Use](https://eikaiwa.dmm.com/app/daily-news/article/top-tips-to-reduce-your-smartphone-use/CICFOE_bEfGTsx_CvC6R_g) | 4 | 生活習慣・テクノロジー | スマホをよく使う時間帯は？／利用時間の制限を設定している？ |
+| 30 | [What Is 'Comfort Food,' and Why Do We Love It?](https://eikaiwa.dmm.com/app/daily-news/article/what-is-comfort-food-and-why-do-we-love-it/bjzf_iR9EfGPjzsMvpCEwQ) | 4 | 食・文化 | よく食べる料理は？／家で作るか買うか？ |
+| 31 | [40% in US Say Kids Should Learn More Languages](https://eikaiwa.dmm.com/app/daily-news/article/40-in-us-say-kids-should-learn-more-languages/Ar08SpaFEfGwbesQN0gQ2Q) | 4 | 言語・教育 | 普段使う言語は？／英語のレッスンを週に何回受ける？ |
+| 32 | [The Best Ways to Politely Correct Someone](https://eikaiwa.dmm.com/app/daily-news/article/the-best-ways-to-politely-correct-someone/9gnXHIwyEfGlHS9-QbZ03g) | 4 | コミュニケーション | 仕事の連絡はチャットか口頭か？／文章の修正にはどんな機能を使う？ |
+| 33 | [Many Americans Judge People by Their Phone Wallpaper](https://eikaiwa.dmm.com/app/daily-news/article/many-americans-judge-people-by-their-phone-wallpaper/h14pJoG_EfGuAD9xBgVk7w) | 4 | 心理・スマホ | スマホの壁紙は何？／どのくらいの頻度で変える？ |
+| 34 | [Work Makes It Hard to Be a Good Parent — Survey](https://eikaiwa.dmm.com/app/daily-news/article/work-makes-it-hard-to-be-a-good-parent-survey/_aHp0nOXEfGVhdf1p8JboQ) | 4 | 仕事・家庭 | 普段の勤務時間は？／職場に時短勤務の制度はある？ |
+| 35 | [The Best Foods to Eat Before Running](https://eikaiwa.dmm.com/app/daily-news/article/the-best-foods-to-eat-before-running/JIVlNm5AEfGRLbsXg7Jmng) | 4 | 食・運動 | 普段運動する？／運動する時間帯は？／その前に食事を取る？ |
+| 36 | [40% of Older Japanese Adults Want to Work](https://eikaiwa.dmm.com/app/daily-news/article/40-of-older-japanese-adults-want-to-work/D2U6EmhrEfGoMOOFnLqK7Q) | 4 | 仕事・日本社会 | 職場に定年制度はある？／何歳と決まっている？ |
+| 37 | [The Best Places to Go Shopping in Tokyo](https://eikaiwa.dmm.com/app/daily-news/article/the-best-places-to-go-shopping-in-tokyo/xKUFNBmHEfG3brPEb06m8w) | 4 | 街・買い物 | 買い物はどの街でする？／そこまで何で行く？ |
+| 38 | [How to Find Time for Yourself When Life Is Busy](https://eikaiwa.dmm.com/app/daily-news/article/how-to-find-time-for-yourself-when-life-is-busy/YYqffk1WEfG84kfZ_mRpkQ) | 4 | 生活・心理 | 平日に自由な時間は何時間くらいある？／何をして過ごす？ |
+| 39 | [What Is 'Slow Travel' and Why Should We Do It?](https://eikaiwa.dmm.com/app/daily-news/article/what-is-slow-travel-and-why-should-we-do-it/NTPiVPaVEfC3XytKdYD3dw) | 4 | 旅行 | 旅行は普段何泊くらい？／一か所に泊まるか移動するか？ |
+| 40 | [How to Plan the Perfect Day Trip](https://eikaiwa.dmm.com/app/daily-news/article/how-to-plan-the-perfect-day-trip/AiZ27kNQEfGV2N9fEVqZwQ) | 4 | 旅行 | 近場への外出には何を使う？／時刻や経路は何で調べる？ |
+| 41 | [A 'Boring' Routine Could Be Good for Your Health](https://eikaiwa.dmm.com/app/daily-news/article/a-boring-routine-could-be-good-for-your-health/XTQhNDggEfGy0KNjP3B99w) | 4 | 健康・生活習慣 | 朝起きてから出かけるまで、普段何をする？ |
+| 42 | [More than Half of Young Koreans Skip Breakfast](https://eikaiwa.dmm.com/app/daily-news/article/more-than-half-of-young-koreans-skip-breakfast/H3vhHrbDEe6xH3vFndujNQ) | 5 | 食事・生活習慣 | 朝食は食べる？／何時に、何を食べる？ |
+| 43 | [Make Food from Ponyo with This Studio Ghibli Cookbook](https://eikaiwa.dmm.com/app/daily-news/article/make-food-from-ponyo-with-this-studio-ghibli-cookbook/nN-ggmAXEfGQoU89dxxpdA) | 5 | アニメ・食 | 家に料理本はある？／レシピは本・動画・サイトのどれで見る？ |
+| 44 | [Should Restaurants Have 'Adults Only' Areas?](https://eikaiwa.dmm.com/app/daily-news/article/should-restaurants-have-adults-only-areas/eLHRfltzEfGH3JtuE5Vfeg) | 5 | 食・社会 | 普段行くレストランにはどんな席がある？／予約して行く？ |
+| 45 | [Osaka Restaurant Adds Sushi Pizza to Its Menu](https://eikaiwa.dmm.com/app/daily-news/article/osaka-restaurant-adds-sushi-pizza-to-its-menu/GnCjwmLrEfGkX7PQPazHOg) | 5 | 食・新商品 | 寿司やピザはどのくらい食べる？／持ち帰りと店内のどちらが多い？ |
+| 46 | [Clothes Top List of Online Returns — Survey](https://eikaiwa.dmm.com/app/daily-news/article/clothes-top-list-of-online-returns-survey/DdqePmLlEfGNW1dCM5Sabw) | 5 | 買い物・生活 | 服はネットで買う？／サイズ表を見る？／普段使うサイトは？ |
+| 47 | [Japan's Summer Plans Change as Costs Rise](https://eikaiwa.dmm.com/app/daily-news/article/japans-summer-plans-change-as-costs-rise/m2rqAoV2EfGKSEsTg5Wrfg) | 5 | 旅行・家計 | 休日の外出には月にいくらくらい使う？／宿や交通は何で予約する？ |
+| 48 | [Driverless Taxis Are Coming to European Cities](https://eikaiwa.dmm.com/app/daily-news/article/driverless-taxis-are-coming-to-european-cities/33kq5pwkEfGS4I-inJGX6A) | 5 | 交通・テクノロジー | 普段の移動手段は？／タクシーはアプリで呼ぶ？ |
+| 49 | [Ticket Prices Rising at Japan's Amusement Parks](https://eikaiwa.dmm.com/app/daily-news/article/ticket-prices-rising-at-japans-amusement-parks/7m8aYpVMEfGOA5f8OMEm1A) | 5 | 娯楽・家計 | 遊園地に行く頻度は？／チケットはどこで買う？ |
+| 50 | [Japan's Paternity Leave Rate Topped 50% in 2025](https://eikaiwa.dmm.com/app/daily-news/article/japans-paternity-leave-rate-topped-50-in-2025/-HcesJABEfGAPnNXsZZjXg) | 5 | 仕事・家庭 | 職場に育休制度はある？／制度の案内はどこで確認できる？ |
+| 51 | [Japan's Food Waste Falls to Record Low](https://eikaiwa.dmm.com/app/daily-news/article/japans-food-waste-falls-to-record-low/3ardwHbEEfGrTGebcGpFYw) | 5 | 食・環境 | 余った料理は冷凍する？／買い物前に冷蔵庫を確認する？ |
+| 52 | [US Remote Work Increased in 2025](https://eikaiwa.dmm.com/app/daily-news/article/us-remote-work-increased-in-2025/e-kRoHmVEfG_X3em4ZTl4g) | 5 | 仕事・生活 | 週に何日出社する？／通勤には何分かかる？ |
+| 53 | [New Sleeper Train Connects Tokyo to Aomori](https://eikaiwa.dmm.com/app/daily-news/article/new-sleeper-train-connects-tokyo-to-aomori/6OdSqmmPEfGC9usLg9r5qw) | 5 | 旅行・鉄道 | 長距離の移動には何を使う？／電車の切符はどこで買う？ |
+| 54 | [The Mistakes Travelers Make When Visiting Japan](https://eikaiwa.dmm.com/app/daily-news/article/the-mistakes-travelers-make-when-visiting-japan/Whg9WGDbEfGAkT9i9gOiLw) | 5 | 旅行・日本文化 | 電車やバスの支払い方法は？／近所に英語の案内はある？ |
+| 55 | [Many Americans Choose Sleep over Plans with Friends](https://eikaiwa.dmm.com/app/daily-news/article/many-americans-choose-sleep-over-plans-with-friends/X6HU5l6hEfGAUAvF17libg) | 5 | 生活・人間関係 | 平日は何時間寝る？／友人とは普段どの時間帯に会う？ |
+| 56 | [Japan Will Soon Have a Pokemon-Themed Airport](https://eikaiwa.dmm.com/app/daily-news/article/japan-will-soon-have-a-pokemon-themed-airport/I5VAlFOuEfGr7iNfU7WMew) | 5 | 旅行・娯楽 | 普段使う空港は？／空港までは何で行く？ |
+| 57 | [Wobbly Beer Glass Forces You to Drink Water](https://eikaiwa.dmm.com/app/daily-news/article/wobbly-beer-glass-forces-you-to-drink-water/ca8y6JX-EfGzxMdwj23Mvw) | 6 | 飲み物・アイデア商品 | お酒は飲む？／普段飲む種類と量は？／水も一緒に飲む？ |
+| 58 | [New Museum Celebrates the World of Jellyfish](https://eikaiwa.dmm.com/app/daily-news/article/new-museum-celebrates-the-world-of-jellyfish/rfXkuJujEfGcT-OaCPrsqQ) | 6 | お出かけ・自然 | 近くに水族館や博物館はある？／休みの日はどんな施設を利用する？ |
+| 59 | [S. Korean Program Rewards People for Exercise](https://eikaiwa.dmm.com/app/daily-news/article/s-korean-program-rewards-people-for-exercise/OURceJJ4EfGhfo-Z8ZmXUQ) | 6 | 健康・制度 | 週に何回運動する？／歩数をアプリで記録している？ |
+| 60 | [74% of US Consumers Have Used AI to Shop](https://eikaiwa.dmm.com/app/daily-news/article/74-of-us-consumers-have-used-ai-to-shop/3_NPoomVEfGg0JPJm6pwAw) | 6 | AI・買い物 | 商品を探すときは何を使う？／レビューやAIを使う？ |
+| 61 | [Seoul, Tokyo Named Best Cities for Digital Nomads](https://eikaiwa.dmm.com/app/daily-news/article/seoul-tokyo-named-best-cities-for-digital-nomads/SEB5jpssEfGmrPPysZoj5A) | 6 | 街・働き方 | 普段どこで仕事や勉強をする？／ネットや電源はある？ |
+| 62 | [South Korea, US Are Japan's Top Fashion Influences](https://eikaiwa.dmm.com/app/daily-news/article/south-korea-us-are-japans-top-fashion-influences/nVUclJsZEfG40r-t8yJDYg) | 6 | ファッション・文化 | 普段着る服のブランドは？／服の情報はどこで見る？ |
+| 63 | [Japanese People Spend Less Time and Money on Leisure](https://eikaiwa.dmm.com/app/daily-news/article/japanese-people-spend-less-time-and-money-on-leisure/nGRelpqpEfGGf_OWMu3UBg) | 6 | 娯楽・家計 | 普段の趣味は？／週に何時間、月にいくらくらい使う？ |
+| 64 | [Four Easy Tricks to Help You Eat Better](https://eikaiwa.dmm.com/app/daily-news/article/four-easy-tricks-to-help-you-eat-better/KxQsAoIYEfGb9h9je8GHXA) | 6 | 食事・家事 | 平日の夕食は何時？／自炊・外食・弁当のどれが多い？ |
+| 65 | [Japanese Choosing 'Coolcations' for Summer Trips](https://eikaiwa.dmm.com/app/daily-news/article/japanese-choosing-coolcations-for-summer-trips/mESeWpYUEfGijadPgGYgHA) | 6 | 旅行・季節 | 夏の外出は何時ごろ？／暑い日はどんな場所で過ごす？ |
+| 66 | [Robot Chef Cooks Noodles in Just 90 Seconds](https://eikaiwa.dmm.com/app/daily-news/article/robot-chef-cooks-noodles-in-just-90-seconds/KJqy1JVQEfGF01cAUoqZeA) | 6 | 食・ロボット | 麺料理はどのくらい食べる？／普段行く店では注文や配膳はどうする？ |
+| 67 | [Would You Say 'I Do' to These Unusual Wedding Traditions?](https://eikaiwa.dmm.com/app/daily-news/article/would-you-say-i-do-to-these-unusual-wedding-traditions/ilh0tl7bEe2DGZOuFcnsAw) | 6 | 文化・結婚 | 日本の結婚式ではどんな服を着る？／お祝いは何を渡す？ |
+| 68 | [Many Japanese Workers Consider Quitting Their Jobs](https://eikaiwa.dmm.com/app/daily-news/article/many-japanese-workers-consider-quitting-their-jobs/JBzARI8GEfGU_kPq34g3iA) | 6 | 仕事・日本社会 | 今の仕事はどんな仕事内容？／勤務日数や勤務場所は？ |
+| 69 | [New Ghibli Anime Released — But Only at Ghibli Park](https://eikaiwa.dmm.com/app/daily-news/article/new-ghibli-anime-released-but-only-at-ghibli-park/7n4eKIHrEfGGFZsaA3RBMA) | 6 | アニメ・観光 | アニメは普段どこで見る？／利用している配信サービスは？ |
+| 70 | [Japanese Workers Pay Services to Ask for Leave](https://eikaiwa.dmm.com/app/daily-news/article/japanese-workers-pay-services-to-ask-for-leave/gW_SBIRhEfGTL5czH0GjzQ) | 6 | 仕事・文化 | 職場で休みを申請する方法は？／誰に、何日前までに伝える？ |
+| 71 | [Read, Don't Talk: What Are Silent Reading Clubs?](https://eikaiwa.dmm.com/app/daily-news/article/read-dont-talk-what-are-silent-reading-clubs/50eetm_IEfGRo1unW0a3pA) | 6 | 本・コミュニティ | 普段どこで本を読む？／紙と電子書籍のどちらを使う？ |
+| 72 | [New Flip Phone Made to Do 'as Little as Possible'](https://eikaiwa.dmm.com/app/daily-news/article/new-flip-phone-made-to-do-as-little-as-possible/k_io6o0jEfGdQO-6wcDhdw) | 7 | テクノロジー・生活 | スマホで毎日使う機能は？／通話はどのくらいする？ |
+| 73 | [Why Tourists Love Foreign Supermarkets](https://eikaiwa.dmm.com/app/daily-news/article/why-tourists-love-foreign-supermarkets/OnFdcJgyEfGVtH8zH3DSHQ) | 7 | 旅行・買い物 | 普段使うスーパーは？／どんな売り場がある？／営業時間は？ |
+| 74 | [The 'Gen Alpha Melody': Why New Songs Sound the Same](https://eikaiwa.dmm.com/app/daily-news/article/the-gen-alpha-melody-why-new-songs-sound-the-same/W_JlnpZvEfGo1wuf9mkbMA) | 7 | 音楽・ネット文化 | 音楽はどのアプリで聴く？／普段聴くジャンルは？ |
+| 75 | [Coffee Cup Texture May Change What You Taste](https://eikaiwa.dmm.com/app/daily-news/article/coffee-cup-texture-may-change-what-you-taste/0B6w8nS1EfGSDZfW8vCwHg) | 7 | 食・心理 | コーヒーやお茶は毎日飲む？／家ではどんなカップを使う？ |
+| 76 | [Japan's Convenience Stores Ready to Help After Disasters](https://eikaiwa.dmm.com/app/daily-news/article/japans-convenience-stores-ready-to-help-after-disasters/dk4USlCAEfGNjhczHT6-2A) | 7 | 防災・生活 | 家に水や非常食は置いている？／近所にコンビニはある？ |
+| 77 | ['FIRE' Movement Helps People Retire Early](https://eikaiwa.dmm.com/app/daily-news/article/fire-movement-helps-people-retire-early/ehAqxp0DEfGN33vEy60xtw) | 7 | 仕事・お金 | 家計簿はつける？／毎月決まった額を貯金している？ |
+| 78 | [Feeding by Tourists Puts Japan's Rabbit Island at Risk](https://eikaiwa.dmm.com/app/daily-news/article/feeding-by-tourists-puts-japans-rabbit-island-at-risk/Cs_mFpwIEfGWDBPjCJBZEw) | 7 | 観光・動物 | 近所の公園には動物への餌やりの注意書きがある？／どんなルール？ |
+| 79 | [Amazon Expands Its Drone Delivery Service](https://eikaiwa.dmm.com/app/daily-news/article/amazon-expands-its-drone-delivery-service/BxsyGJxoEfGdiCMF5ejv7Q) | 7 | 買い物・テクノロジー | ネット通販は月に何回使う？／荷物は対面・置き配・ロッカーのどれで受け取る？ |
+| 80 | [Airline to Charge Passengers to Use Overhead Lockers](https://eikaiwa.dmm.com/app/daily-news/article/airline-to-charge-passengers-to-use-overhead-lockers/w__-KJGVEfGuDQuKR7becA) | 7 | 旅行・料金 | 飛行機に乗るときはどんなかばんを使う？／荷物を預ける？ |
+| 81 | [How to Make Time for 'Deep Work'](https://eikaiwa.dmm.com/app/daily-news/article/how-to-make-time-for-deep-work/3E1LiLRHEfCW3G8Ni9xBrQ) | 7 | 仕事・集中 | 作業中は通知を切っている？／集中する時間帯は？ |
+| 82 | [Is Social Media Ruining the Joy of Travel?](https://eikaiwa.dmm.com/app/daily-news/article/is-social-media-ruining-the-joy-of-travel/s0qbFoaBEfGwjKvz0gA7Ag) | 7 | 旅行・SNS | SNSに写真を載せる？／撮影と投稿にはどのアプリを使う？ |
+| 83 | [Just 10 Minutes of Forest Birdsong May Relieve Stress](https://eikaiwa.dmm.com/app/daily-news/article/just-10-minutes-of-forest-birdsong-may-relieve-stress/Rf_CbItdEfGL1GeF-PY5dw) | 7 | 自然・健康 | 家の周りに公園や木はある？／普段どんな鳥の声が聞こえる？ |
+| 84 | [Older Tokyo Residents Increasingly Enjoy Time Alone](https://eikaiwa.dmm.com/app/daily-news/article/older-tokyo-residents-increasingly-enjoy-time-alone/3vbiSonpEfGnwK9bSkDzJA) | 7 | 生活・社会 | 一人で過ごす時間は一日どのくらい？／その時間に何をする？ |
+| 85 | [Monitoring Employees Doesn't Improve Performance](https://eikaiwa.dmm.com/app/daily-news/article/monitoring-employees-doesnt-improve-performance/tKLQ8IbvEfG5unMzjAnsew) | 7 | 仕事・管理 | 職場では勤怠をどう記録する？／作業報告はどのくらいの頻度？ |
+| 86 | [Saving Money Is Easier with Goals — US Survey](https://eikaiwa.dmm.com/app/daily-news/article/saving-money-is-easier-with-goals-us-survey/wnmPkG_cEfGqX6f0IzXWng) | 7 | お金・生活 | 貯金は自動積立か手動か？／残高は何で確認する？ |
+| 87 | [More Clothing Brands Offering Repair Services](https://eikaiwa.dmm.com/app/daily-news/article/more-clothing-brands-offering-repair-services/9XjAopVQEfGpyTNNXjaStA) | 8 | 買い物・環境 | 服はどこで買う？／修理に出す？／何年くらい着る？ |
+| 88 | [United Airlines Announces New Empty Middle Seat Row](https://eikaiwa.dmm.com/app/daily-news/article/united-airlines-announces-new-empty-middle-seat-row/5Pq6FoEcEfG1_kslPNfZqA) | 8 | 旅行・サービス | 飛行機ではどの席を選ぶ？／予約時に座席指定をする？ |
+| 89 | [Why Do We Get Grumpy in Hot Weather?](https://eikaiwa.dmm.com/app/daily-news/article/why-do-we-get-grumpy-in-hot-weather/VWAuanTREfGJuf9eBBU6LQ) | 8 | 健康・季節 | 夏は冷房を何度に設定する？／外出時に何を持ち歩く？ |
+| 90 | [New Pixel Phones Betting on AI to Tempt Buyers](https://eikaiwa.dmm.com/app/daily-news/article/new-pixel-phones-betting-on-ai-to-tempt-buyers/VIBC5JboEfGRlKv74RAPtA) | 8 | スマホ・AI | 今のスマホは何年使っている？／AI機能を使っている？ |
+| 91 | [Remote Work Making Americans Lonelier — Report](https://eikaiwa.dmm.com/app/daily-news/article/remote-work-making-americans-lonelier-report/eYFummQiEfG0zN9xEcT2HA) | 8 | 仕事・生活 | 同僚との連絡には何を使う？／雑談する機会は一日にどのくらいある？ |
+| 92 | [Some US Colleges Now Offer 'Influencer' Degrees](https://eikaiwa.dmm.com/app/daily-news/article/some-us-colleges-now-offer-influencer-degrees/_7zrnJe8EfGCpsvFKz2b0A) | 8 | 教育・SNS | 普段見るSNSは？／どんな分野のアカウントをフォローしている？ |
+| 93 | [AI Uptake Remains Slow in Japan](https://eikaiwa.dmm.com/app/daily-news/article/ai-uptake-remains-slow-in-japan/MyhazpgsEfGjCWfqbre3qQ) | 8 | AI・仕事 | AIを仕事や日常で使う？／どんな作業に使う？ |
+| 94 | [Kellogg to Remove Artificial Colors from Its Cereals](https://eikaiwa.dmm.com/app/daily-news/article/kellogg-to-remove-artificial-colors-from-its-cereals/3TrHEpJbEfGdNe8mtIXc9w) | 8 | 食・健康 | 朝食にシリアルを食べる？／買い物で原材料表示を見る？ |
+| 95 | [The Story of How the Days of the Week Got Their Names](https://eikaiwa.dmm.com/app/daily-news/article/the-story-of-how-the-days-of-the-week-got-their-names/To7V0n3_EeySu1_Dd8K7hA) | 8 | 言語・日常 | 仕事やレッスンは何曜日？／ごみ収集は何曜日？ |
+| 96 | [Your Birth Order May Affect Your Health](https://eikaiwa.dmm.com/app/daily-news/article/your-birth-order-may-affect-your-health/j3B1EpWzEfG5w39X3gK_Jw) | 8 | 家族・健康 | 兄弟姉妹はいる？／何人？／普段家族とはどのくらい連絡を取る？ |
+| 97 | [Algorithms May Be Making Your Media Consumption Boring](https://eikaiwa.dmm.com/app/daily-news/article/algorithms-may-be-making-your-media-consumption-boring/WhO3bGA0EfGQNAsu98pCvA) | 8 | メディア・AI | 動画は検索とおすすめ欄のどちらから選ぶ？／使っているサービスは？ |
+| 98 | [Mexico Passes Bill to Cut Workweek to 40 Hours](https://eikaiwa.dmm.com/app/daily-news/article/mexico-passes-bill-to-cut-workweek-to-40-hours/VSNrFGTsEfGV9MftrLIubQ) | 8 | 仕事・制度 | 週に何日、何時間働く？／休憩は何分？ |
+| 99 | [Hiking Affects Animal Behavior More than We Think](https://eikaiwa.dmm.com/app/daily-news/article/hiking-affects-animal-behavior-more-than-we-think/uMxfFl7REfGazcfcdlUQrg) | 8 | アウトドア・自然 | 普段歩く場所は街中か自然の中か？／近くの散策路にどんな標識がある？ |
+| 100 | [How Notifications Hurt Your Concentration](https://eikaiwa.dmm.com/app/daily-news/article/how-notifications-hurt-your-concentration/2gBv9Ce6EfG7QQ_dbT_vxw) | 8 | スマホ・集中 | どのアプリの通知をオンにしている？／寝るときは音を消す？ |
 
-最初に選ぶなら `Japanese Customer Service` → `Foreign Supermarkets` → `Adults Only Restaurants` の順がおすすめです。Level 8に挑戦するなら `Smartphone Use` が第一候補です。
+最初は **People in Japan Are Eating Less Rice**（ご飯を食べる回数・買う場所）、**Three 'Rules' to Help You Get a Good Sleep**（寝る時刻・起きる時刻）、**Expert Tips to Keep Your Home Tidy**（掃除の頻度・収納場所）がおすすめです。製品なら **Apple Launches Rental Program for Its Products**（今使っている機器）、Level 8なら **Three Fun, Tasty Ways to Get More Miso in Your Life!**（味噌汁の頻度・具）から話し始められます。
 
 ### 選定基準
 
-- Level 4〜8を各20件にし、難易度が一部に偏らないようにする
-- コンビニ、買い物、スマホ、食事、仕事、旅行、防災など、日常と接点がある題材を優先する
-- スマホや家電など普段使う製品、アニメ・ゲーム・音楽などのサブカル系も積極的に含める
-- ペットを飼っている経験が前提になる記事は候補から外す
-- 専門知識がなくても、自分の経験、日本との比較、賛否と理由で答えられるDiscussionを選ぶ
-- 本文が多少難しくても、Discussionの質問を読んだときに具体例を思いつける記事は候補に含める
-- 過去に良かった記事は好みを判断する一例として使い、その記事自体を優先する理由にはしない
+- 現在の習慣、頻度、使っている物、店、場所、手順、身近なルールなど、すでに知っている事実を答えるだけで会話が成り立つことを優先する
+- 「そんな思い出はある？」「印象的な出来事は？」「子どもの頃は？」など、記憶を探してエピソードを組み立てる必要がある質問は避ける
+- 「なぜそう思う？」「賛成か反対か？」「理想は？」「社会にどんな影響がある？」など、意見や分析が中心になる記事は優先度を下げる
+- 食事、家事、健康、製品、学校・学習、仕事、買い物、旅行、娯楽、文化、自然・環境に題材を広げる
+- Level 4〜8を各20件とし、英文の難しさとは別に、回答内容を考える負担が小さいかを判断する
+- ペットの飼育、育児、海外旅行など特定の経験を前提にせず、現在の生活や知っている範囲の事実から答えられる入口を用意する
+- 専門知識や調べ直しが必要な説明を求めず、健康・技術の記事も普段の習慣や使い方を話す入口として選ぶ
+- 実際のDiscussionでは事実・習慣を聞く質問の数と答えやすさを確認する。会話案だけで記事の設問まで話しやすいとは判断しない
