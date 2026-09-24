@@ -18,35 +18,35 @@ python3 collect_daily_news.py --all-pages --pretty --output daily_news_articles.
 
 Level 4〜8から各20件、合計100件。最初の25件は、普段の事実だけで答え始めやすい題材をジャンルが偏らないように配置し、26件目以降はLevel順です。
 
-選定元は保存済みの [記事一覧](daily_news_articles.json)（最新の公開日時：2026年8月23日 UTC）です。以下はタイトルをもとに作った会話案で、**実際のDiscussionにこうした質問が多いことを確認した一覧ではありません**。記事を選ぶ際は実際の設問も確認してください。金額・頻度はおおよそでよく、「使わない」「特にない」も答えになります。
+2026年9月24日更新。新着一覧の先頭8ページを取得して保存済みの [記事一覧](daily_news_articles.json) に統合し、候補24件を入れ替えました（保存データの最新公開日時：2026年9月23日 UTC）。以下はタイトルをもとに作った会話案で、**実際のDiscussionにこうした質問が多いことを確認した一覧ではありません**。記事を選ぶ際は実際の設問も確認してください。金額・頻度はおおよそでよく、「使わない」「特にない」も答えになります。
 
 | # | 記事 | Level | ジャンル | 事実だけで答え始められる質問例（独自の会話案） |
 |---:|---|:---:|---|---|
-| 1 | [People in Japan Are Eating Less Rice](https://eikaiwa.dmm.com/app/daily-news/article/people-in-japan-are-eating-less-rice/VAEwGFNOEfGaq_eqiKTpQw) | 5 | 食文化・暮らし | ご飯を一日何回食べる？／家で炊く？／米はどこで買う？ |
-| 2 | [Three 'Rules' to Help You Get a Good Sleep](https://eikaiwa.dmm.com/app/daily-news/article/three-rules-to-help-you-get-a-good-sleep/cnPUAFf_EfGquNuUAbHQpw) | 4 | 健康・生活習慣 | 何時に寝て起きる？／平日と休日で睡眠時間は違う？ |
-| 3 | [Expert Tips to Keep Your Home Tidy](https://eikaiwa.dmm.com/app/daily-news/article/expert-tips-to-keep-your-home-tidy/nMF6KF3bEfGsRF8N5OJnOA) | 4 | 住まい・生活 | 掃除は週に何回する？／洗濯物や本はどこにしまう？ |
-| 4 | [Apple Launches Rental Program for Its Products](https://eikaiwa.dmm.com/app/daily-news/article/apple-launches-rental-program-for-its-products/7GNvzIt3EfGYSF_xc_TgtQ) | 6 | 製品・買い物 | 今使っているスマホやパソコンは？／購入品かレンタルか？ |
-| 5 | [Japanese Workers Tired of Unwritten Office Rules](https://eikaiwa.dmm.com/app/daily-news/article/japanese-workers-tired-of-unwritten-office-rules/s2HpSpvwEfGwqc_l8OMy-g) | 6 | 仕事・日本社会 | 職場の服装は？／始業時刻は？／会議はどのくらいある？ |
-| 6 | [Lawson Opens New 'Mini-Supermarkets'](https://eikaiwa.dmm.com/app/daily-news/article/lawson-opens-new-mini-supermarkets/ORA2Cl2eEfGh1Gt0oqDaBw) | 5 | 買い物・生活 | コンビニとスーパーではそれぞれ何を買う？／近くにどちらがある？ |
-| 7 | [The Ideal Movie Length Is 88 Minutes — Survey](https://eikaiwa.dmm.com/app/daily-news/article/the-ideal-movie-length-is-88-minutes-survey/1N3EUnx2EfGN-jMm4Eo_fA) | 5 | 映画・娯楽 | 映画は家と映画館のどちらで見る？／月に何本くらい見る？ |
-| 8 | [Laptops Now More Important for Students than Books](https://eikaiwa.dmm.com/app/daily-news/article/laptops-now-more-important-for-students-than-books/62LRiJseEfG17QNeO8ErFw) | 6 | 教育・テクノロジー | 勉強には紙とパソコンのどちらを使う？／メモはどこに取る？ |
-| 9 | [From Practical to Fashionable: Casio's 'Cheap Watches'](https://eikaiwa.dmm.com/app/daily-news/article/from-practical-to-fashionable-casios-cheap-watches/yK-MEH6_EfG0Fg_bxs9Plw) | 7 | ファッション・商品 | 腕時計は着ける？／どのメーカー？／どこで時間を確認する？ |
-| 10 | [Three Fun, Tasty Ways to Get More Miso in Your Life!](https://eikaiwa.dmm.com/app/daily-news/article/three-fun-tasty-ways-to-get-more-miso-in-your-life/ilZ-Cm6AEfGyB-c5VMfVHg) | 8 | 料理・日本文化 | 味噌汁は週に何回飲む？／普段入れる具は？／即席も使う？ |
-| 11 | [Australians Are Using More Cash](https://eikaiwa.dmm.com/app/daily-news/article/australians-are-using-more-cash/VTFn5EKOEfGVBqvUA49VwQ) | 7 | 買い物・支払い | 普段の支払いは現金・カード・スマホのどれ？／現金は持ち歩く？ |
-| 12 | [Why MP3 Players Are Making a Comeback](https://eikaiwa.dmm.com/app/daily-news/article/why-mp3-players-are-making-a-comeback/urEjbDrREfGboe_DnO1TTg) | 5 | 音楽・テクノロジー | 音楽を聴く機器は？／曲は保存するか配信で聴くか？ |
-| 13 | [Gen Z Adults Are Spending Their Weekends at Home](https://eikaiwa.dmm.com/app/daily-news/article/gen-z-adults-are-spending-their-weekends-at-home/HW8OGpFxEfGuHE_W1tkkiw) | 6 | 生活・世代 | 休日は家で何をする？／外出する頻度は？ |
-| 14 | [What's Blocking Your Wi-Fi — and How to Fix It](https://eikaiwa.dmm.com/app/daily-news/article/whats-blocking-your-wi-fi-and-how-to-fix-it/efpNzIAmEfGqOu_luTjdqA) | 7 | ネット・住まい | 家ではWi-Fiを使う？／ルーターはどの部屋にある？ |
-| 15 | [Fewer than 10,000 Bookstores Remain in Japan](https://eikaiwa.dmm.com/app/daily-news/article/fewer-than-10000-bookstores-remain-in-japan/Gqm5EGplEfGMko8qjCGmig) | 5 | 本・地域社会 | 本はどこで買う？／近所に書店はある？／電子書籍も読む？ |
-| 16 | [Hotel, Airbnb, Hostel: Where to Stay on Holiday](https://eikaiwa.dmm.com/app/daily-news/article/hotel-airbnb-hostel-where-to-stay-on-holiday/SmcaCCbqEfGZoL-1li9wuQ) | 4 | 旅行・宿泊 | 宿の予約に使うサイトは？／普段はホテル・旅館などのどれを使う？ |
-| 17 | [Timing of Meals May Affect Brain Health](https://eikaiwa.dmm.com/app/daily-news/article/timing-of-meals-may-affect-brain-health/WKNPlIxfEfG6vdN1CFbl9Q) | 6 | 食・健康 | 朝・昼・夕食はそれぞれ何時？／間食はする？ |
-| 18 | [Solar-Powered Boat Stops Plastic Reaching the Sea](https://eikaiwa.dmm.com/app/daily-news/article/solar-powered-boat-stops-plastic-reaching-the-sea/3EHRgmnCEfGSS2-T1e_RGw) | 8 | 環境・発明 | ごみは何種類に分ける？／ペットボトルはどこに捨てる？ |
+| 1 | [Japan's Vending Machines to Sell Canned Hot Pot](https://eikaiwa.dmm.com/app/daily-news/article/japans-vending-machines-to-sell-canned-hot-pot/fS6aCLKsEfGwi_unK9nc2g) | 5 | 食・自動販売機 | 自動販売機では何を買う？／家や職場の近くにはどんな自販機がある？ |
+| 2 | [Japan's Favorite Rice Dish Is Chahan — Survey](https://eikaiwa.dmm.com/app/daily-news/article/japans-favorite-rice-dish-is-chahan-survey/k000equfEfGD94v_xkd6eQ) | 4 | 食事・料理 | チャーハンは家で作る？／普段はどんな具を入れる？ |
+| 3 | [Average American Rates Their Home 7.5 Out of 10](https://eikaiwa.dmm.com/app/daily-news/article/average-american-rates-their-home-75-out-of-10/9Oms8Kh5EfGossdUvX6YgQ) | 4 | 住まい・生活 | 今の家には何部屋ある？／普段どの部屋で過ごす？ |
+| 4 | [Save Time with These Meal-Prepping Tips](https://eikaiwa.dmm.com/app/daily-news/article/save-time-with-these-meal-prepping-tips/DpUyPjq9Ee2OZGsIAi1KoA) | 6 | 料理・家事 | 作り置きはする？／何日分を作る？／冷蔵と冷凍のどちらで保存する？ |
+| 5 | [FamilyMart Introduces New Dress Code for Workers](https://eikaiwa.dmm.com/app/daily-news/article/familymart-introduces-new-dress-code-for-workers/Rl1l7KMPEfGHM7MtT-tpVQ) | 6 | 仕事・服装 | 仕事中はどんな服を着る？／制服はある？／靴に決まりはある？ |
+| 6 | [Americans' Top Priority When Buying Clothes? Price!](https://eikaiwa.dmm.com/app/daily-news/article/americans-top-priority-when-buying-clothes-price/ecpiLrETEfGOr-Poab5dSg) | 5 | 買い物・衣服 | 服はどこで買う？／一着にいくらくらい使う？／セールを利用する？ |
+| 7 | [Lego Creates Sony PlayStation Set](https://eikaiwa.dmm.com/app/daily-news/article/lego-creates-sony-playstation-set/TagxCKhJEfGi4reZXjEQEw) | 5 | ゲーム・趣味 | 家にゲーム機や組み立てる玩具はある？／普段どこに置いている？ |
+| 8 | [53% of Americans Spend Too Much Time on Phones](https://eikaiwa.dmm.com/app/daily-news/article/53-of-americans-spend-too-much-time-on-phones/MSgnWqytEfGsXhOF9sJVWg) | 6 | スマホ・生活習慣 | スマホは一日何時間くらい使う？／よく開くアプリは？ |
+| 9 | [Singapore Pays People to Read](https://eikaiwa.dmm.com/app/daily-news/article/singapore-pays-people-to-read/OeRljLG5EfGcZ48bzr337g) | 7 | 本・学習 | 本は週にどのくらい読む？／図書館は使う？／普段どこで読む？ |
+| 10 | [Japan's Amazake Becoming Popular as a Health Drink](https://eikaiwa.dmm.com/app/daily-news/article/japans-amazake-becoming-popular-as-a-health-drink/09oZzLBeEfGb3k_8mH-MwQ) | 8 | 飲み物・日本文化 | 甘酒は飲む？／普段飲むものは？／どこで買う？ |
+| 11 | [Driverless Taxi Service Planned for Tokyo in 2027](https://eikaiwa.dmm.com/app/daily-news/article/driverless-taxi-service-planned-for-tokyo-in-2027/zBAG1LGtEfGkbR_NyUk9rA) | 7 | 交通・テクノロジー | タクシーはどのくらい使う？／アプリと乗り場のどちらで手配する？ |
+| 12 | [Remote Workers Lose 58 Minutes of Movement a Day](https://eikaiwa.dmm.com/app/daily-news/article/remote-workers-lose-58-minutes-of-movement-a-day/5zT_qLIiEfGM3rNaROjYNQ) | 5 | 仕事・運動 | 仕事中はどのくらい座っている？／休憩中は歩く？／通勤手段は？ |
+| 13 | [Time Out Ranks the World's Best Cities for Cycling](https://eikaiwa.dmm.com/app/daily-news/article/time-out-ranks-the-worlds-best-cities-for-cycling/tLXbQq4IEfG1G-OqqHs4Gg) | 6 | 移動・街 | 自転車は使う？／どこへ行くときに乗る？／近所に駐輪場はある？ |
+| 14 | [Japan's Tatami Mats Could Help Mood and Focus](https://eikaiwa.dmm.com/app/daily-news/article/japans-tatami-mats-could-help-mood-and-focus/WUKIVq4gEfGluofmZXnH5A) | 7 | 住まい・日本文化 | 家に畳の部屋はある？／床には何を敷いている？／どこで勉強する？ |
+| 15 | [Osaka Metro Tests AI Robot Station Worker](https://eikaiwa.dmm.com/app/daily-news/article/osaka-metro-tests-ai-robot-station-worker/9xLxcqruEfGcujdddIVZCg) | 5 | 鉄道・生活 | 普段使う駅は？／切符とICカードのどちらを使う？／経路は何で調べる？ |
+| 16 | [Americans Use Less Cash, but Still Carry It](https://eikaiwa.dmm.com/app/daily-news/article/americans-use-less-cash-but-still-carry-it/V3rjdqIgEfGKev8Z42cYjw) | 4 | 買い物・支払い | 普段は何で支払う？／現金はいくらくらい持ち歩く？ |
+| 17 | [Three Key Decorating Tips for Renters](https://eikaiwa.dmm.com/app/daily-news/article/three-key-decorating-tips-for-renters/z4rOIKr1EfGeJJchj3wO1w) | 6 | 住まい・家具 | 部屋にはどんな家具を置いている？／壁に飾っているものはある？ |
+| 18 | [How South Korea Solved the Problem of Food Waste](https://eikaiwa.dmm.com/app/daily-news/article/how-south-korea-solved-the-problem-of-food-waste/73RdTLWjEfG7Jq94kU8bJw) | 8 | 家事・環境 | 生ごみはどう分別する？／収集日は週に何回？／余った食材はどう保存する？ |
 | 19 | [The Best Foods to Try at 7-Eleven Japan](https://eikaiwa.dmm.com/app/daily-news/article/the-best-foods-to-try-at-7-eleven-japan/NUFgwM_iEfC14ifDstv8Kg) | 4 | 食・コンビニ | コンビニには週に何回行く？／よく買う食べ物は？ |
-| 20 | [Which Is Better: Wired or Wireless Headphones?](https://eikaiwa.dmm.com/app/daily-news/article/which-is-better-wired-or-wireless-headphones/UMNSyCMGEfGxDLPHVL0_Kw) | 7 | 音楽・製品 | イヤホンは有線か無線か？／いつ、何につないで使う？ |
-| 21 | [How Smartphone Use Is Affecting Our Bodies](https://eikaiwa.dmm.com/app/daily-news/article/how-smartphone-use-is-affecting-our-bodies/p8ApennNEfGM5Q-NWesaPg) | 8 | 健康・テクノロジー | スマホを一日何時間使う？／使うときは座っている？ |
-| 22 | [Coffee May Protect Your Heart — Energy Drinks Don't](https://eikaiwa.dmm.com/app/daily-news/article/coffee-may-protect-your-heart-energy-drinks-dont/ikLqrIupEfGM2otz6tj-vQ) | 8 | 飲み物・健康 | コーヒーは一日何杯？／エナジードリンクは飲む？ |
-| 23 | [Obon: Japan's Summer Festival of Spirits](https://eikaiwa.dmm.com/app/daily-news/article/obon-japans-summer-festival-of-spirits/5oLFbJVjEfGt4eNnLo7kUA) | 7 | 日本文化・行事 | お盆に仕事は休みになる？／地域ではどんな行事がある？ |
-| 24 | [97% of Asia Pacific Travelers Go Cashless When Traveling](https://eikaiwa.dmm.com/app/daily-news/article/97-of-asia-pacific-travelers-go-cashless-when-traveling/KKqirI-aEe6z44_Kay0uRw) | 8 | 旅行・支払い | 外出先では何で支払う？／交通系ICやスマホ決済を使う？ |
-| 25 | [Ultrarare Nintendo Cartridges Found After Years in Storage](https://eikaiwa.dmm.com/app/daily-news/article/ultrarare-nintendo-cartridges-found-after-years-in-storage/p8co0JrSEfGjUY98Ukdi6A) | 8 | ゲーム・収集 | 家にゲーム機はある？／ソフトはダウンロード版かパッケージ版か？ |
+| 20 | [Mobile Gaming May Hurt Your Neck and Elbows](https://eikaiwa.dmm.com/app/daily-news/article/mobile-gaming-may-hurt-your-neck-and-elbows/mgdn6KiGEfGD0GvdKa9ieQ) | 7 | ゲーム・スマホ | スマホでゲームをする？／一回何分くらい？／どんな姿勢で遊ぶ？ |
+| 21 | [Screenshots Are Bad for Your Memory — Here's Why](https://eikaiwa.dmm.com/app/daily-news/article/screenshots-are-bad-for-your-memory-heres-why/Rj3FoJwdEfG9C0vj74qIYQ) | 8 | スマホ・記録 | スクリーンショットは撮る？／何を保存する？／後でどこから探す？ |
+| 22 | [Paper Coffee Cups Release Millions of Nanoplastics](https://eikaiwa.dmm.com/app/daily-news/article/paper-coffee-cups-release-millions-of-nanoplastics/VohvqKVrEfGPxF9EYxbNNg) | 8 | 飲み物・日用品 | 飲み物は持ち帰りで買う？／家ではどんなカップを使う？／マイボトルは持ち歩く？ |
+| 23 | [Tsukimi: Japan's Moon-Viewing Tradition](https://eikaiwa.dmm.com/app/daily-news/article/tsukimi-japans-moon-viewing-tradition/_1Co4MPoEfC-0b8k_26BLA) | 7 | 日本文化・季節 | 近所で月見の飾りや商品を見かける？／この時期に店に並ぶ食べ物は？ |
+| 24 | [Sleep Trackers May Make You Feel More Tired](https://eikaiwa.dmm.com/app/daily-news/article/sleep-trackers-may-make-you-feel-more-tired/8tRuyKu3EfGklw9hmyh4DQ) | 8 | 睡眠・機器 | 睡眠時間は記録している？／使うアプリや機器は？／何時に起きる？ |
+| 25 | [Research Confirms Tai Chi Health Benefits](https://eikaiwa.dmm.com/app/daily-news/article/research-confirms-tai-chi-health-benefits/6R_uwqHsEfG-Z-tnwjQAEQ) | 8 | 運動・生活習慣 | 普段どんな運動をする？／週に何回？／家と屋外のどちらでする？ |
 | 26 | [Sweet, Bitter, Tart: Four Special Fruits from Japan](https://eikaiwa.dmm.com/app/daily-news/article/sweet-bitter-tart-four-special-fruits-from-japan/_m8xoverEfCNHePgAq8xMQ) | 4 | 食・買い物 | 普段買う果物は？／どこで買う？／だいたいいくら？ |
 | 27 | [How to Make Your Home Feel Brand New](https://eikaiwa.dmm.com/app/daily-news/article/how-to-make-your-home-feel-brand-new/vw5EVA5_EfGnP7PpRQiL0A) | 4 | 住まい・家事 | 部屋にどんな家具がある？／掃除に何を使う？ |
 | 28 | [What Makes Japanese Customer Service Unique](https://eikaiwa.dmm.com/app/daily-news/article/what-makes-japanese-customer-service-unique/CQOvTIbdEfGeoyMgtWOy6Q) | 4 | 日本文化・サービス | 普段行く店はセルフレジ？／袋詰めは誰がする？ |
@@ -123,7 +123,7 @@ Level 4〜8から各20件、合計100件。最初の25件は、普段の事実�
 | 99 | [Hiking Affects Animal Behavior More than We Think](https://eikaiwa.dmm.com/app/daily-news/article/hiking-affects-animal-behavior-more-than-we-think/uMxfFl7REfGazcfcdlUQrg) | 8 | アウトドア・自然 | 普段歩く場所は街中か自然の中か？／近くの散策路にどんな標識がある？ |
 | 100 | [How Notifications Hurt Your Concentration](https://eikaiwa.dmm.com/app/daily-news/article/how-notifications-hurt-your-concentration/2gBv9Ce6EfG7QQ_dbT_vxw) | 8 | スマホ・集中 | どのアプリの通知をオンにしている？／寝るときは音を消す？ |
 
-最初は **People in Japan Are Eating Less Rice**（ご飯を食べる回数・買う場所）、**Three 'Rules' to Help You Get a Good Sleep**（寝る時刻・起きる時刻）、**Expert Tips to Keep Your Home Tidy**（掃除の頻度・収納場所）がおすすめです。製品なら **Apple Launches Rental Program for Its Products**（今使っている機器）、Level 8なら **Three Fun, Tasty Ways to Get More Miso in Your Life!**（味噌汁の頻度・具）から話し始められます。
+最初は **Japan's Favorite Rice Dish Is Chahan — Survey**（チャーハンの具・作る頻度）、**Average American Rates Their Home 7.5 Out of 10**（部屋数・過ごす場所）、**Save Time with These Meal-Prepping Tips**（作り置き・保存方法）がおすすめです。買い物なら **Americans Use Less Cash, but Still Carry It**（支払い方法）、Level 8なら **How South Korea Solved the Problem of Food Waste**（ごみの分別・収集日）から話し始められます。
 
 ### 選定基準
 

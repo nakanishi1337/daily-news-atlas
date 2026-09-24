@@ -1,5 +1,999 @@
 [
   {
+    "title": "Seoul Has the World's 'Coolest' Neighborhood",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-23T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/seoul-has-the-worlds-coolest-neighborhood/WcuXWrN5EfG2tRMDvDk7TQ"
+  },
+  {
+    "title": "Women Hold Just 11% of Management Jobs in Japan",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-23T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/women-hold-just-11-of-management-jobs-in-japan/0Xlf8rETEfGbDfuBm1GKUA"
+  },
+  {
+    "title": "Very Hot Drinks Could Increase Cancer Risk",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-23T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/very-hot-drinks-could-increase-cancer-risk/Mv7zeq0uEfGBBiPvR7rWBQ"
+  },
+  {
+    "title": "Japan's Asian Games Face Problems with Athlete Housing",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-23T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japans-asian-games-face-problems-with-athlete-housing/4VUC9LX2EfGvVIdnzaT82Q"
+  },
+  {
+    "title": "How South Korea Solved the Problem of Food Waste",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-23T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/how-south-korea-solved-the-problem-of-food-waste/73RdTLWjEfG7Jq94kU8bJw"
+  },
+  {
+    "title": "Winners of Bird Photographer of the Year Revealed",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-22T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/winners-of-bird-photographer-of-the-year-revealed/oyA1NrM-EfGS9Ov1kRXWUg"
+  },
+  {
+    "title": "South Koreans Pick Japan for 'Babymoon' Shopping",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-22T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/south-koreans-pick-japan-for-babymoon-shopping/FBH4QLDfEfGUOJPMPF0n0w"
+  },
+  {
+    "title": "Tax the Super-Rich to Save Lives, Says Report",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-22T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/tax-the-super-rich-to-save-lives-says-report/e4OrALK0EfGnREeTb-xxlg"
+  },
+  {
+    "title": "Earth Lost 11 Trillion Tons of Ice in 47 Years",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-22T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/earth-lost-11-trillion-tons-of-ice-in-47-years/bXBHvLY4EfGRGIcFphWmfw"
+  },
+  {
+    "title": "Japan's Vending Machines to Sell Canned Hot Pot",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-22T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japans-vending-machines-to-sell-canned-hot-pot/fS6aCLKsEfGwi_unK9nc2g"
+  },
+  {
+    "title": "Remote Workers Lose 58 Minutes of Movement a Day",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-21T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/remote-workers-lose-58-minutes-of-movement-a-day/5zT_qLIiEfGM3rNaROjYNQ"
+  },
+  {
+    "title": "Tsukimi: Japan's Moon-Viewing Tradition",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-21T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/tsukimi-japans-moon-viewing-tradition/_1Co4MPoEfC-0b8k_26BLA"
+  },
+  {
+    "title": "T. Rex Body Temperature Was Similar to Our Own",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-21T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/t-rex-body-temperature-was-similar-to-our-own/fe6WVLVuEfGNHouAU-1GIw"
+  },
+  {
+    "title": "Kyoto Police 'Overwhelmed' with Lost Items",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-21T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/kyoto-police-overwhelmed-with-lost-items/aOA-uLKmEfGfCW-pN9BSaw"
+  },
+  {
+    "title": "Japan's Favorite Rice Dish Is Chahan — Survey",
+    "level": 4,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-21T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japans-favorite-rice-dish-is-chahan-survey/k000equfEfGD94v_xkd6eQ"
+  },
+  {
+    "title": "Japan's Convenience Stores Launch AI-Designed Sweets",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-20T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japans-convenience-stores-launch-ai-designed-sweets/V6wmgLKbEfGXm3PXnAbEpg"
+  },
+  {
+    "title": "Sleep Trackers May Make You Feel More Tired",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-20T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/sleep-trackers-may-make-you-feel-more-tired/8tRuyKu3EfGklw9hmyh4DQ"
+  },
+  {
+    "title": "More than 100,000 People in Japan Are 100 or Older",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-20T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/more-than-100000-people-in-japan-are-100-or-older/txxhtLEcEfGNpm_RSmLgyw"
+  },
+  {
+    "title": "Nearly 70% of Diet and Exercise Videos Are Misleading",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-20T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/nearly-70-of-diet-and-exercise-videos-are-misleading/WEer1LEiEfGYddO5mc9evw"
+  },
+  {
+    "title": "Merriam-Webster Dictionary Adds 1,400 New Words",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-19T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/merriam-webster-dictionary-adds-1400-new-words/RWv1VLMTEfGfirMtJbpOVA"
+  },
+  {
+    "title": "More Japanese Seniors Are Starting Businesses",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-19T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/more-japanese-seniors-are-starting-businesses/AB0wFrDuEfGfIx9ujcC-mA"
+  },
+  {
+    "title": "teamLab to Open Biggest Museum Yet in Tokyo",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-19T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/teamlab-to-open-biggest-museum-yet-in-tokyo/h9ZP3rEQEfGKci8TWCS_bA"
+  },
+  {
+    "title": "Let Kids Try to Solve Their Own Problems, Say Experts",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-19T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/let-kids-try-to-solve-their-own-problems-say-experts/wHB-8rA8EfGfZ98TK1aClA"
+  },
+  {
+    "title": "Americans' Top Priority When Buying Clothes? Price!",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-18T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/americans-top-priority-when-buying-clothes-price/ecpiLrETEfGOr-Poab5dSg"
+  },
+  {
+    "title": "Driverless Taxi Service Planned for Tokyo in 2027",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-18T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/driverless-taxi-service-planned-for-tokyo-in-2027/zBAG1LGtEfGkbR_NyUk9rA"
+  },
+  {
+    "title": "Fewer Than 80% of Japanese Singles Intend to Marry",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-18T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/fewer-than-80-of-japanese-singles-intend-to-marry/TbrZGrALEfG_SCspossHNA"
+  },
+  {
+    "title": "Eating Natto Linked to Better Brain Health",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-18T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/eating-natto-linked-to-better-brain-health/R7Py9LIYEfGtc2dhI6-F2Q"
+  },
+  {
+    "title": "Time Out Ranks the World's Best Cities for Cycling",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-17T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/time-out-ranks-the-worlds-best-cities-for-cycling/tLXbQq4IEfG1G-OqqHs4Gg"
+  },
+  {
+    "title": "Canada-US Trade Dispute Boosts Maple Syrup Sales",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-17T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/canada-us-trade-dispute-boosts-maple-syrup-sales/Rgm5wrCLEfGLYSuFwBbj5A"
+  },
+  {
+    "title": "Risk of Large-Scale War Rising — UN Report",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-17T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/risk-of-large-scale-war-rising-un-report/lbC6RrH_EfGIOMtiXobzTA"
+  },
+  {
+    "title": "Weak 'Soft Skills' Hurt Productivity, Employers Say",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-17T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/weak-soft-skills-hurt-productivity-employers-say/Q4IK5rHqEfG_wDvEFm9__Q"
+  },
+  {
+    "title": "Caring for Others? Don't Forget Yourself, Says Study",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-17T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/caring-for-others-dont-forget-yourself-says-study/Y2kIvLHdEfGWLz9wh7y6lA"
+  },
+  {
+    "title": "You Could Win $14,000 for Sleeping in Tokyo",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-16T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/you-could-win-14000-for-sleeping-in-tokyo/SVM3wK4pEfGCtlP4WtCMwg"
+  },
+  {
+    "title": "Singapore Pays People to Read",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-16T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/singapore-pays-people-to-read/OeRljLG5EfGcZ48bzr337g"
+  },
+  {
+    "title": "Tokyo's Shinjuku Station Tests Trash Can Robots",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-16T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/tokyos-shinjuku-station-tests-trash-can-robots/C6OeHrA3EfGh1KsPE-thMw"
+  },
+  {
+    "title": "Parents Today Need a Lot of Help — Survey",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-16T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/parents-today-need-a-lot-of-help-survey/zo_1RK3QEfGsfkMKs5cYYw"
+  },
+  {
+    "title": "Japan's Amazake Becoming Popular as a Health Drink",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-16T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japans-amazake-becoming-popular-as-a-health-drink/09oZzLBeEfGb3k_8mH-MwQ"
+  },
+  {
+    "title": "NorCal to SoCal: A Guide to Californian Slang",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-15T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/norcal-to-socal-a-guide-to-californian-slang/HFyLSqFZEeyLFbc4XHtixQ"
+  },
+  {
+    "title": "England Bans Deep-Fried Food from School Lunches",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-15T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/england-bans-deep-fried-food-from-school-lunches/S9t_9LB_EfGzRQ-LRi32oQ"
+  },
+  {
+    "title": "Too Much Coffee May Be Bad for Your Bones",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-15T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/too-much-coffee-may-be-bad-for-your-bones/dxt9Vq0mEfGr9fMEU77hcw"
+  },
+  {
+    "title": "How High Expectations Can Improve Performance",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-15T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/how-high-expectations-can-improve-performance/EP445PVpEfCBlnMODLzrMA"
+  },
+  {
+    "title": "Only 1 in 4 Japanese Adults Trust Social Media",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-15T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/only-1-in-4-japanese-adults-trust-social-media/Zvr1ULB4EfGoHY8k_B94lw"
+  },
+  {
+    "title": "Average American Rates Their Home 7.5 Out of 10",
+    "level": 4,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-14T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/average-american-rates-their-home-75-out-of-10/9Oms8Kh5EfGossdUvX6YgQ"
+  },
+  {
+    "title": "Japan's Everyday Foods Get a Protein Boost",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-14T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japans-everyday-foods-get-a-protein-boost/KyG4tK1uEfGCGhehnrm2nw"
+  },
+  {
+    "title": "Japan's Tatami Mats Could Help Mood and Focus",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-14T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japans-tatami-mats-could-help-mood-and-focus/WUKIVq4gEfGluofmZXnH5A"
+  },
+  {
+    "title": "AI-Generated Menu Pictures Scare Customers Away",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-14T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/ai-generated-menu-pictures-scare-customers-away/3jPNPKx2EfGwM6c1iPCxVg"
+  },
+  {
+    "title": "Mobile Gaming May Hurt Your Neck and Elbows",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-13T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/mobile-gaming-may-hurt-your-neck-and-elbows/mgdn6KiGEfGD0GvdKa9ieQ"
+  },
+  {
+    "title": "What Are the World's Happiest Destinations?",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-13T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/what-are-the-worlds-happiest-destinations/nA8lOKxDEfGk1SfzZdr0BQ"
+  },
+  {
+    "title": "Smoking Linked with Increased Loneliness",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-13T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/smoking-linked-with-increased-loneliness/tb5w0K1tEfGdBsdHzUkGyg"
+  },
+  {
+    "title": "53% of Americans Spend Too Much Time on Phones",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-13T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/53-of-americans-spend-too-much-time-on-phones/MSgnWqytEfGsXhOF9sJVWg"
+  },
+  {
+    "title": "From Tires to Food: The History of the Michelin Guide",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-12T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/from-tires-to-food-the-history-of-the-michelin-guide/FEYL5pfiEeyuG1dn7rBldQ"
+  },
+  {
+    "title": "Japanese City Ends Traditional School Club System",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-12T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japanese-city-ends-traditional-school-club-system/QakL7KylEfGcC_Nj9TnFBA"
+  },
+  {
+    "title": "US Workers Name AI Skills as 'Career Currency'",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-12T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/us-workers-name-ai-skills-as-career-currency/Y9iyjq0yEfGRErO2anbrDg"
+  },
+  {
+    "title": "The World's Most Rewarding Wildlife Travel Experiences",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-12T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/the-worlds-most-rewarding-wildlife-travel-experiences/w6ab1qrLEfGk72_egm3Y7Q"
+  },
+  {
+    "title": "Many Americans Won't Travel Without Their Pets",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-11T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/many-americans-wont-travel-without-their-pets/oXyAhqtzEfGAOmeLKTQ9Hw"
+  },
+  {
+    "title": "One Side or Both? S. Korea Rethinks Escalator Rules",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-11T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/one-side-or-both-s-korea-rethinks-escalator-rules/vxc3Rqr-EfGcXVfFEDrA6A"
+  },
+  {
+    "title": "Japan Leads OECD in Reading, Math and Science",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-11T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japan-leads-oecd-in-reading-math-and-science/uqheJK1HEfGYWlOB1poxsQ"
+  },
+  {
+    "title": "We Trust Fake Doctor Reviews More than Real Ones",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-11T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/we-trust-fake-doctor-reviews-more-than-real-ones/2eEsOKuqEfGCCcsUKsROHQ"
+  },
+  {
+    "title": "Apple's New iPhone Lineup Includes First Foldable Model",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-10T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/apples-new-iphone-lineup-includes-first-foldable-model/SCmHqqzLEfGyMp8ODVWqtQ"
+  },
+  {
+    "title": "Kyoto Temple Bans Visitors in Kimonos",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-10T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/kyoto-temple-bans-visitors-in-kimonos/GeCfqKxfEfGkb7NS54Oeqw"
+  },
+  {
+    "title": "The Top Signs That You're in Control of Your Life",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-10T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/the-top-signs-that-youre-in-control-of-your-life/JMla3qyYEfGNlOukb5Fm7w"
+  },
+  {
+    "title": "Three Key Decorating Tips for Renters",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-10T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/three-key-decorating-tips-for-renters/z4rOIKr1EfGeJJchj3wO1w"
+  },
+  {
+    "title": "Osaka Metro Tests AI Robot Station Worker",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-10T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/osaka-metro-tests-ai-robot-station-worker/9xLxcqruEfGcujdddIVZCg"
+  },
+  {
+    "title": "The Love Story of the Taj Mahal",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-09T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/the-love-story-of-the-taj-mahal/_0vdmpAOEey1zS8xNiPGyw"
+  },
+  {
+    "title": "953 Foreign Business Owners Have Left Japan in 2026",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-09T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/953-foreign-business-owners-have-left-japan-in-2026/HnxbIKiAEfGaAgNy6JVKSw"
+  },
+  {
+    "title": "US Kids Don't Get the Right Nutrition at Breakfast",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-09T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/us-kids-dont-get-the-right-nutrition-at-breakfast/deON0qhkEfGKU1uixVuaCg"
+  },
+  {
+    "title": "Rome Cracks Down on Tourist Golf Carts",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-09T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/rome-cracks-down-on-tourist-golf-carts/PNwacqqPEfG1xRdPt-gBiA"
+  },
+  {
+    "title": "Sleeping in on Weekends May Be Good for Your Heart",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-09T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/sleeping-in-on-weekends-may-be-good-for-your-heart/EX-OWqfcEfGf2w9hsNKdOw"
+  },
+  {
+    "title": "Influencers Cause Tennis Etiquette Debate at US Open",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-08T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/influencers-cause-tennis-etiquette-debate-at-us-open/XyO8rKrGEfGFDy8bW6gL2w"
+  },
+  {
+    "title": "Survey Reveals Power of Personality in Getting Hired",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-08T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/survey-reveals-power-of-personality-in-getting-hired/KKROtKbXEfGF5L-qJJafQA"
+  },
+  {
+    "title": "Should Young Children Spend More Time at School?",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-08T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/should-young-children-spend-more-time-at-school/Eu_-7qcqEfGgg8OYecHGRg"
+  },
+  {
+    "title": "UN Endorses Map Showing Africa's True Size",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-08T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/un-endorses-map-showing-africas-true-size/cgRMUKrMEfGZ-tfG-K7zdw"
+  },
+  {
+    "title": "Sleep Like a Pokemon in Japan's Poke Ball Hotel",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-08T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/sleep-like-a-pokemon-in-japans-poke-ball-hotel/UjfezqeXEfG99hfskwDrmw"
+  },
+  {
+    "title": "Lego Creates Sony PlayStation Set",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-07T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/lego-creates-sony-playstation-set/TagxCKhJEfGi4reZXjEQEw"
+  },
+  {
+    "title": "Japanese Tourists Are the Most Polite — Survey",
+    "level": 4,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-07T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japanese-tourists-are-the-most-polite-survey/JUAvkqYwEfG8gxdxdmaZkQ"
+  },
+  {
+    "title": "Paper Coffee Cups Release Millions of Nanoplastics",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-07T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/paper-coffee-cups-release-millions-of-nanoplastics/VohvqKVrEfGPxF9EYxbNNg"
+  },
+  {
+    "title": "Museums in Japan Host 'Plushie Sleepovers'",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-07T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/museums-in-japan-host-plushie-sleepovers/VFPgmKY2EfGPUA_UquCgFA"
+  },
+  {
+    "title": "Study Shows Impact of Binge Drinking on Young Brains",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-07T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/study-shows-impact-of-binge-drinking-on-young-brains/2Yg-zKiXEfGuk2_JAu8m1w"
+  },
+  {
+    "title": "Americans Put Food First on Vacation",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-06T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/americans-put-food-first-on-vacation/UC3jyJKMEfGAIW_efYYHWw"
+  },
+  {
+    "title": "Coco Ichibanya Owner Considering Sale",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-06T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/coco-ichibanya-owner-considering-sale/gd7nbqcdEfGb8Sv78VkCCA"
+  },
+  {
+    "title": "How Solar Became the World's Cheapest Energy Source",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-06T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/how-solar-became-the-worlds-cheapest-energy-source/O8xHnKgKEfGd96MjUhVAHA"
+  },
+  {
+    "title": "Choice Is the Key to Life Satisfaction — Study",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-06T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/choice-is-the-key-to-life-satisfaction-study/vrKlsqbiEfGyIHMbtRVAOQ"
+  },
+  {
+    "title": "Save Time with These Meal-Prepping Tips",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-05T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/save-time-with-these-meal-prepping-tips/DpUyPjq9Ee2OZGsIAi1KoA"
+  },
+  {
+    "title": "Bandai Releasing 'Tamagotchi Ring' for 30th Anniversary",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-05T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/bandai-releasing-tamagotchi-ring-for-30th-anniversary/M1FcWKciEfG5lVPp1xfllg"
+  },
+  {
+    "title": "Farm Stay Holidays Booming in the UK",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-05T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/farm-stay-holidays-booming-in-the-uk/DgONcqavEfGElPOpDmWYOg"
+  },
+  {
+    "title": "Didn't Sleep Enough? Exercise May Protect Your Memory",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-05T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/didnt-sleep-enough-exercise-may-protect-your-memory/XFPrTqMlEfGav-vJnCJgUg"
+  },
+  {
+    "title": "NYC Bans AI for Elementary and Middle Schools",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-04T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/nyc-bans-ai-for-elementary-and-middle-schools/t25dIqgPEfGAHcc3KUBHwg"
+  },
+  {
+    "title": "Nonstop US-Okinawa Flights to Start in 2027",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-04T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/nonstop-us-okinawa-flights-to-start-in-2027/bNnjVKVNEfGFYq_WAmAHmQ"
+  },
+  {
+    "title": "Social Media and Videos Linked to Worse Test Scores",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-04T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/social-media-and-videos-linked-to-worse-test-scores/KNZUaKZaEfGaZ78fSm4ddg"
+  },
+  {
+    "title": "Why Japanese Businesses Are Investing in India",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-04T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/why-japanese-businesses-are-investing-in-india/AxonZqfOEfGkcX-0vIFRrg"
+  },
+  {
+    "title": "Research Confirms Tai Chi Health Benefits",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-03T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/research-confirms-tai-chi-health-benefits/6R_uwqHsEfG-Z-tnwjQAEQ"
+  },
+  {
+    "title": "Japan's Shoe Etiquette Can Delay Paramedics",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-03T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japans-shoe-etiquette-can-delay-paramedics/vgs8oqZAEfGLXpNqSQD-LA"
+  },
+  {
+    "title": "Japan's Births Increase for First Time in 11 Years",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-03T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japans-births-increase-for-first-time-in-11-years/IQNEcKVmEfGGXzf3-cnUDg"
+  },
+  {
+    "title": "Half of Japanese Households Unprepared for Disasters",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-03T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/half-of-japanese-households-unprepared-for-disasters/5vooHqdqEfG09vtH2gylRA"
+  },
+  {
+    "title": "This Startup Is Trying to Bring Back Twitter",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-03T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/this-startup-is-trying-to-bring-back-twitter/WoE3mKVcEfGQSJuemVraRA"
+  },
+  {
+    "title": "Why Are New Zealanders Called Kiwis?",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-02T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/why-are-new-zealanders-called-kiwis/2EXnwFPiEe2TY68HPjL_0g"
+  },
+  {
+    "title": "Japan's Latest Tourism Trend: Getting Better Sleep",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-02T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japans-latest-tourism-trend-getting-better-sleep/6iex5qMZEfGZqLsQJKhpdQ"
+  },
+  {
+    "title": "Japan Lowers Speed Limit on Residential Roads",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-02T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japan-lowers-speed-limit-on-residential-roads/j-Ii9KYjEfG3sRuneDLHFg"
+  },
+  {
+    "title": "How Good Journalism Fights Bad Science",
+    "level": 9,
+    "difficulty": "Proficient",
+    "published_at": "2026-09-02T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/how-good-journalism-fights-bad-science/xpFTSqGiEfG-058fFuj-0A"
+  },
+  {
+    "title": "FamilyMart Introduces New Dress Code for Workers",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-02T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/familymart-introduces-new-dress-code-for-workers/Rl1l7KMPEfGHM7MtT-tpVQ"
+  },
+  {
+    "title": "Groundbreaking Transplant Restores Woman's Sight",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-01T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/groundbreaking-transplant-restores-womans-sight/KsbU_qXFEfGipqPE4au63w"
+  },
+  {
+    "title": "Gen Z and Millennials Choose Different Travel Spots",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-01T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/gen-z-and-millennials-choose-different-travel-spots/EJTUUqISEfGzbxOd0TBNwA"
+  },
+  {
+    "title": "Human-Written Resumes Beat AI in Job-Hunt Test",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-09-01T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/human-written-resumes-beat-ai-in-job-hunt-test/GIhONKFXEfG3_ifNvZngcw"
+  },
+  {
+    "title": "Gaming Addiction Rises Among Japan's Youth",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-01T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/gaming-addiction-rises-among-japans-youth/FNVqXJ_VEfGPkOuiaDzlvw"
+  },
+  {
+    "title": "Scientists Make Cookies from Plastic Waste",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-09-01T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/scientists-make-cookies-from-plastic-waste/LKlavKEfEfG0MbvkeFNKFg"
+  },
+  {
+    "title": "Americans Use Less Cash, but Still Carry It",
+    "level": 4,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-31T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/americans-use-less-cash-but-still-carry-it/V3rjdqIgEfGKev8Z42cYjw"
+  },
+  {
+    "title": "Japanese Enzyme Baths Find Fans at Home and Abroad",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-08-31T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japanese-enzyme-baths-find-fans-at-home-and-abroad/f7CmjqMxEfGPXOcbkX3Eig"
+  },
+  {
+    "title": "Growing Number of Apps Help Adults Make Friends",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-31T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/growing-number-of-apps-help-adults-make-friends/DDFNpKJUEfGSkHOjZjPmEw"
+  },
+  {
+    "title": "Tokyo's Sushi Bus Combines Food and Sightseeing",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-31T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/tokyos-sushi-bus-combines-food-and-sightseeing/WQ4lqKAeEfGTrpcXotT6aA"
+  },
+  {
+    "title": "Some Trees Make City Air Quality Worse — Study",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-08-31T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/some-trees-make-city-air-quality-worse-study/0kCIRqKwEfGmrrtXKAUm_w"
+  },
+  {
+    "title": "From Japan to the World: Matcha Goes Mainstream",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-08-30T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/from-japan-to-the-world-matcha-goes-mainstream/SwcpRqI6EfGZleOp4Tyaxw"
+  },
+  {
+    "title": "A Dragon Ball Theme Park Is Coming to Paris",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-30T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/a-dragon-ball-theme-park-is-coming-to-paris/vas04KGDEfGdmN8kycPPyg"
+  },
+  {
+    "title": "Beijing Restaurant Serves Food Fit for Emperors",
+    "level": 9,
+    "difficulty": "Proficient",
+    "published_at": "2026-08-30T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/beijing-restaurant-serves-food-fit-for-emperors/F0ddhJ0vEfG6Y08daXBxlg"
+  },
+  {
+    "title": "Money Worries Affect Two-Thirds of UK Workers",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-30T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/money-worries-affect-two-thirds-of-uk-workers/s-TAAqDoEfGSlXdo_rT52A"
+  },
+  {
+    "title": "Stores in Japan Lower Prices for Rice-Based Products",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-29T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/stores-in-japan-lower-prices-for-rice-based-products/fDn8kqFxEfGs_9PlwVu9zg"
+  },
+  {
+    "title": "Japan to Look at Conditions in Wild Animal Cafes",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-08-29T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japan-to-look-at-conditions-in-wild-animal-cafes/tAzSBqJnEfGqfO-jJwcVJQ"
+  },
+  {
+    "title": "Australia Bans AI-Made Songs from Music Charts",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-29T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/australia-bans-ai-made-songs-from-music-charts/fea6XKFtEfGDOl9MOgIbrg"
+  },
+  {
+    "title": "Does Your Personality Affect How Well You Age?",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-08-29T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/does-your-personality-affect-how-well-you-age/OvAVmp2PEfG9ERNtU1AGzw"
+  },
+  {
+    "title": "What People Would Give up to Live Longer — Survey",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-28T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/what-people-would-give-up-to-live-longer-survey/niSeJqDfEfGiQNsl8n0tpw"
+  },
+  {
+    "title": "Iconic Japanese Artist Yayoi Kusama Dies at 97",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-08-28T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/iconic-japanese-artist-yayoi-kusama-dies-at-97/7FJA2qLOEfG5XBt8LOLNyA"
+  },
+  {
+    "title": "Fewer US Teens Are Taking Summer Jobs",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-28T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/fewer-us-teens-are-taking-summer-jobs/MuKlmqBTEfGO5nstG0gHfw"
+  },
+  {
+    "title": "Cost, Visas Shape Students' Study-Abroad Choices",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-08-28T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/cost-visas-shape-students-study-abroad-choices/0MDw2qDDEfGQ1qd2FfgBjw"
+  },
+  {
+    "title": "Women Build Stronger Workplace Friendships, Study Says",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-08-27T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/women-build-stronger-workplace-friendships-study-says/Xl0kuqCkEfG6vtPqNxsWLw"
+  },
+  {
+    "title": "70% of Japanese Think They're Safe from Online Scams",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-27T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/70-of-japanese-think-theyre-safe-from-online-scams/MuwZSJwiEfGTXYdaIlTDrw"
+  },
+  {
+    "title": "1,800 People Help Move Castle in Japan",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-08-27T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/1800-people-help-move-castle-in-japan/QsDa9KFhEfG_ViMIp4KVoA"
+  },
+  {
+    "title": "Jumbo Jets Find New Life as Hotel Suites",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-27T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/jumbo-jets-find-new-life-as-hotel-suites/UGWjJKAIEfGAc8fTe6neIg"
+  },
+  {
+    "title": "Screenshots Are Bad for Your Memory — Here's Why",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-08-27T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/screenshots-are-bad-for-your-memory-heres-why/Rj3FoJwdEfG9C0vj74qIYQ"
+  },
+  {
+    "title": "Kids' Vaping Linked to Smoking, Health Issues",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-08-26T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/kids-vaping-linked-to-smoking-health-issues/PBlZoqCYEfGH4GcHbPvjkw"
+  },
+  {
+    "title": "Overpacking Is Travelers' Biggest Mistake",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-26T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/overpacking-is-travelers-biggest-mistake/EGQSDp0NEfGoBX-PS1qkmg"
+  },
+  {
+    "title": "Italian Mayor Bans Bikes After Being Hit by One",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-26T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/italian-mayor-bans-bikes-after-being-hit-by-one/YuaBEJ-IEfGZja9sBVjaqw"
+  },
+  {
+    "title": "Dolly Parton, Queen of Country Music, Dies at 80",
+    "level": 9,
+    "difficulty": "Proficient",
+    "published_at": "2026-08-26T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/dolly-parton-queen-of-country-music-dies-at-80/P1ROtqEPEfGSmRssQO5POQ"
+  },
+  {
+    "title": "Burger King Japan's All-You-Can-Eat Challenge Is Back",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-26T15:03:45.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/burger-king-japans-all-you-can-eat-challenge-is-back/aZdjfp-ZEfGB75cCOOG-lA"
+  },
+  {
+    "title": "Ferrari's First EV Sells for Record $40 Million",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-08-25T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/ferraris-first-ev-sells-for-record-40-million/eTKnVp_6EfGytwOyS9K2aQ"
+  },
+  {
+    "title": "56% of US Workers Spend Whole Workday Indoors",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-25T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/56-of-us-workers-spend-whole-workday-indoors/NtoNJJqKEfG2yyujmZwf_Q"
+  },
+  {
+    "title": "UFO News Makes More Americans Believe in Aliens",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-08-25T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/ufo-news-makes-more-americans-believe-in-aliens/6_NnJqATEfGloWONnh9K4w"
+  },
+  {
+    "title": "'Zero-Topping Noodles' Gaining Popularity in Japan",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-25T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/zero-topping-noodles-gaining-popularity-in-japan/X1tI8JsUEfGdQttv2pcu1Q"
+  },
+  {
+    "title": "Your Gut May Affect Your Response to Stress — Study",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-08-25T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/your-gut-may-affect-your-response-to-stress-study/ipTjQJpSEfG709sDBbt1HA"
+  },
+  {
+    "title": "Seoul to Introduce 'Right to Walk in Shade'",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-24T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/seoul-to-introduce-right-to-walk-in-shade/QxU9-Jv2EfG_Bq9SnaJpjw"
+  },
+  {
+    "title": "This Hormone May Explain Why Exercise Helps the Brain",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-24T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/this-hormone-may-explain-why-exercise-helps-the-brain/6c2sSpy8EfGLYz-8-D_0qw"
+  },
+  {
+    "title": "US Dogs May Be Eating Better than Their Owners",
+    "level": 4,
+    "difficulty": "Intermediate",
+    "published_at": "2026-08-24T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/us-dogs-may-be-eating-better-than-their-owners/MXcdOJzlEfG3xFMDVadSsw"
+  },
+  {
+    "title": "US Debt Hits Record $40 Trillion",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-08-24T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/us-debt-hits-record-40-trillion/4SIVJp3GEfGYpZ9jfW_S0Q"
+  },
+  {
+    "title": "Kids Get More Screen Time When Parents Are Stressed",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-08-24T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/kids-get-more-screen-time-when-parents-are-stressed/4shN2JuuEfG_2x_Ko9EoPg"
+  },
+  {
     "title": "Driverless Taxis Are Coming to European Cities",
     "level": 5,
     "difficulty": "Intermediate",
@@ -1888,6 +2882,13 @@
     "difficulty": "Advanced",
     "published_at": "2026-06-26T17:00:00.000Z",
     "url": "https://eikaiwa.dmm.com/app/daily-news/article/worlds-most-peaceful-countries-for-2026-revealed/3-z_jGadEfGz4GMwRBno5A"
+  },
+  {
+    "title": "Just 9% in Europe Now End Schooling Early",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-06-26T17:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/just-9-in-europe-now-end-schooling-early/gqVtSGtQEfGCUyOLNOu_FA"
   },
   {
     "title": "Japan Secure Round of 32 Spot After Draw with Sweden",
@@ -40320,13 +41321,6 @@
     "url": "https://eikaiwa.dmm.com/app/daily-news/article/brazilian-soccer-icon-pelé-dies-aged-82/bohs9IfREe2lWv8v9rn57A"
   },
   {
-    "title": "Why Are New Zealanders Called Kiwis?",
-    "level": 6,
-    "difficulty": "Intermediate",
-    "published_at": "2022-12-30T17:00:00.000Z",
-    "url": "https://eikaiwa.dmm.com/app/daily-news/article/why-are-new-zealanders-called-kiwis/2EXnwFPiEe2TY68HPjL_0g"
-  },
-  {
     "title": "Tips to Stick to Your New Year's Resolutions",
     "level": 7,
     "difficulty": "Advanced",
@@ -42089,13 +43083,6 @@
     "difficulty": "Intermediate",
     "published_at": "2022-09-30T17:00:00.000Z",
     "url": "https://eikaiwa.dmm.com/app/daily-news/article/uk-companies-see-positives-of-4-day-work-week/gsKzSD3OEe2eN9sjJRsS8A"
-  },
-  {
-    "title": "Save Time with These Meal-Prepping Tips",
-    "level": 6,
-    "difficulty": "Intermediate",
-    "published_at": "2022-09-30T17:00:00.000Z",
-    "url": "https://eikaiwa.dmm.com/app/daily-news/article/save-time-with-these-meal-prepping-tips/DpUyPjq9Ee2OZGsIAi1KoA"
   },
   {
     "title": "US Book Banning Efforts Grow in 2022",
@@ -46172,13 +47159,6 @@
     "url": "https://eikaiwa.dmm.com/app/daily-news/article/background-ukraine-russia-and-nato/BK1lwJodEey08DNUG4yGIQ"
   },
   {
-    "title": "NorCal to SoCal: A Guide to Californian Slang",
-    "level": 5,
-    "difficulty": "Intermediate",
-    "published_at": "2022-03-15T17:00:00.000Z",
-    "url": "https://eikaiwa.dmm.com/app/daily-news/article/norcal-to-socal-a-guide-to-californian-slang/HFyLSqFZEeyLFbc4XHtixQ"
-  },
-  {
     "title": "Storm Chasers: People Who Chase Tornadoes",
     "level": 6,
     "difficulty": "Intermediate",
@@ -46361,13 +47341,6 @@
     "url": "https://eikaiwa.dmm.com/app/daily-news/article/france-to-promote-french-language-during-2024-olympics/2YkbgpkYEeyyh2f1LlKnPA"
   },
   {
-    "title": "From Tires to Food: The History of the Michelin Guide",
-    "level": 6,
-    "difficulty": "Intermediate",
-    "published_at": "2022-03-05T17:00:00.000Z",
-    "url": "https://eikaiwa.dmm.com/app/daily-news/article/from-tires-to-food-the-history-of-the-michelin-guide/FEYL5pfiEeyuG1dn7rBldQ"
-  },
-  {
     "title": "Norway Bans Breeding of Two Popular Types of Dog",
     "level": 6,
     "difficulty": "Intermediate",
@@ -46548,13 +47521,6 @@
     "difficulty": "Proficient",
     "published_at": "2022-02-24T22:18:56.000Z",
     "url": "https://eikaiwa.dmm.com/app/daily-news/article/russia-launches-attacks-on-ukraine-as-invasion-begins/LQwcbpWfEeytcReWJnAt_Q"
-  },
-  {
-    "title": "The Love Story of the Taj Mahal",
-    "level": 6,
-    "difficulty": "Intermediate",
-    "published_at": "2022-02-24T17:00:00.000Z",
-    "url": "https://eikaiwa.dmm.com/app/daily-news/article/the-love-story-of-the-taj-mahal/_0vdmpAOEey1zS8xNiPGyw"
   },
   {
     "title": "Spinal Implant Helps Paralyzed Man Walk Again",
