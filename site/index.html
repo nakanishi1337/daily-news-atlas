@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f4">
+  <meta name="description" content="DMM英会話 Daily Newsの記事選びを支援する非公式ツール。記事マップ、キーワード検索、トピック・地域・Level・公開日の絞り込みでレッスンに使う記事を選べます。">
+  <title>Daily News Atlas — 記事検索・選択ツール</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-brand">
+    <a class="brand" href="./" aria-label="Daily News Atlas ホーム"><span class="brand-icon">a<span>•</span></span><span>Daily News <b>Atlas</b></span></a>
+    <p class="header-description">DMM Daily Newsの記事を、話題・地域・Level・公開日で検索。<br>内容が近い記事をマップや一覧から探せます。</p>
+    </div>
+    <div class="header-right"><span class="independent">DMM Daily News 非公式ツール</span><button id="about-button" class="text-button">このサイトについて <span>↗</span></button></div>
+  </header>
+  <main>
+    <div class="workspace">
+      <aside class="filters" aria-label="記事の絞り込み">
+        <div class="filter-heading"><h2>検索条件</h2><button id="reset-filters" class="text-button">リセット</button><button id="toggle-filters" class="mobile-filter-toggle" aria-expanded="false" aria-controls="filter-facets">絞り込み ▾</button></div>
+        <label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="search" type="search" placeholder="タイトル・タグを検索" aria-label="タイトル・タグを検索"></label>
+        <div id="filter-facets" class="filter-facets">
+        <section class="facet"><h3>Topic <span>トピック</span></h3><div id="topic-filters" class="topic-options"></div></section>
+        <section class="facet"><h3>Region <span>地域</span></h3><div id="region-filters" class="chips"></div></section>
+        <section class="facet"><h3>Level <span>英語の難易度</span></h3><div id="level-filters" class="level-options"></div><div class="level-caption"><span>Intermediate</span><span>Proficient</span></div></section>
+        <section class="facet"><h3>Date <span>公開日</span></h3><div class="date-fields"><label>開始日<input id="date-from" type="date"></label><span>–</span><label>終了日<input id="date-to" type="date"></label></div><p id="date-error" class="field-error" hidden>開始日は終了日以前にしてください。</p></section>
+        </div>
+      </aside>
+      <section class="explorer" aria-label="記事検索結果">
+        <div class="map-toolbar"><div><span class="live-dot"></span><strong id="match-count" aria-live="polite">読み込み中</strong><span class="toolbar-caption">該当</span></div><div class="view-switch" aria-label="表示方法"><button id="map-view" class="active" aria-pressed="true"><span>⠿</span> Map</button><button id="list-view" aria-pressed="false"><span>☷</span> List</button></div></div>
+        <div id="active-filters" class="active-filters" hidden></div>
+        <div id="map-panel" class="map-panel">
+          <div class="map-caption"><span>記事マップ</span><p>内容が近い記事を近くに配置。拡大すると細かい話題も表示します。</p></div>
+          <canvas id="map" tabindex="0" aria-label="記事の意味的マップ。ドラッグで移動、ホイールで拡大。記事のキーボード操作にはList表示をご利用ください。"></canvas>
+          <div id="map-tooltip" class="map-tooltip" hidden></div>
+          <div id="map-status" class="map-status"><div class="loading-ring"></div><p>記事データを読み込み中…</p></div>
+          <div class="map-controls"><button id="zoom-in" aria-label="拡大">+</button><button id="zoom-out" aria-label="縮小">−</button><span></span><button id="fit-map" aria-label="全体を表示"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/><circle cx="12" cy="12" r="2"/></svg></button></div>
+          <div class="map-bottom"><span><i></i> 1つの点 = 1つの記事</span><span>ドラッグで移動 · スクロールで拡大</span></div>
+        </div>
+        <div id="list-panel" class="list-panel" hidden><div class="list-toolbar"><span>記事一覧</span><label>並び順 <select id="sort"><option value="date-desc">公開日：新しい順</option><option value="date-asc">公開日：古い順</option><option value="level">Level：低い順</option><option value="title">タイトル順</option></select></label></div><div id="article-list"></div><div class="pagination"><button id="prev-page">← 前へ</button><span id="page-info"></span><button id="next-page">次へ →</button></div></div>
+      </section>
+      <aside id="detail-panel" class="detail-panel" aria-label="記事の詳細">
+        <div id="discovery"><h2>記事詳細</h2><p>マップの点または一覧の記事を選択すると、詳細と類似記事を表示します。</p><div class="discovery-rule"></div><h3>絞り込み例</h3><div id="discovery-tags" class="discovery-tags"></div></div>
+        <div id="article-detail" hidden></div>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer"><span>Daily News Atlas <span class="footer-dot">·</span> 非公式ツール</span><span>記事本文：<a href="https://eikaiwa.dmm.com/app/daily-news/" target="_blank" rel="noopener noreferrer">DMM Daily News ↗</a></span></footer>
+  <dialog id="about-dialog">
+    <button id="close-about" class="close-button" aria-label="閉じる">×</button>
+    <h2>このサイトについて</h2>
+    <p>Daily News Atlasは、DMM英会話 Daily Newsの過去記事から、レッスンで読む記事を選ぶためのツールです。</p>
+    <p>睡眠、旅行、AIなどの話題や、地域・Level・公開日から記事を探せます。似た話題の記事を比較しながら選ぶこともできます。</p>
+    <p>記事本文はDMM Daily Newsで読めます。話題や地域のタグは、記事を探しやすくするために独自に付けています。</p>
+    <p id="data-info"></p>
+    <p>DMMとは提携していない非公式サイトです。</p>
+    <a class="primary-link" href="https://eikaiwa.dmm.com/app/daily-news/" target="_blank" rel="noopener noreferrer">DMM Daily News を開く ↗</a>
+  </dialog>
+</body>
+</html>

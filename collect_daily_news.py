@@ -188,6 +188,7 @@ def main() -> int:
     arg_parser.add_argument("--delay", type=float, default=0.3, help="Seconds between page requests (default: 0.3)")
     arg_parser.add_argument("--max-pages", type=int, help="Stop after this many pages (useful for testing)")
     arg_parser.add_argument("--output", type=Path, help="Write JSON to a file instead of stdout")
+    arg_parser.add_argument("--merge", type=Path, help="Merge with an existing metadata JSON, keeping older articles")
     arg_parser.add_argument("--min-level", type=int)
     arg_parser.add_argument("--max-level", type=int)
     arg_parser.add_argument("--limit", type=int)
@@ -204,6 +205,14 @@ def main() -> int:
     else:
         html = args.input.read_text(encoding="utf-8") if args.input else fetch(INDEX_URL)
         articles = parse(html)
+    if not articles:
+        print("No articles found; existing output has not been changed.", file=sys.stderr)
+        return 1
+    if args.merge:
+        existing = json.loads(args.merge.read_text(encoding="utf-8"))
+        merged = {item["url"]: Article(**item) for item in existing}
+        merged.update({article.url: article for article in articles})
+        articles = sorted(merged.values(), key=lambda a: (a.published_at or "", a.url), reverse=True)
     if args.min_level is not None:
         articles = [a for a in articles if a.level is not None and a.level >= args.min_level]
     if args.max_level is not None:

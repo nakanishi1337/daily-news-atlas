@@ -1,3 +1,106 @@
+# Daily News Atlas
+
+DMM英会話 Daily Newsの過去記事を、意味的な近さから探索する静的サイトのMVPです。既存の13,517記事（2014-04-24〜2026-09-23）から、実際にembeddingとUMAP座標を生成したJSONを同梱しています。本文は収録しません。
+
+## 起動
+
+```bash
+npm run dev
+```
+
+http://localhost:5173 を開きます。表示にはPython 3だけが必要で、npm依存のインストールは不要です。JSONの読み込みがあるため、HTMLを直接開くのではなくHTTPサーバーを使ってください。
+
+## できること
+
+- CanvasのSemantic Map：各記事を点で表示。ドラッグ移動、拡大縮小、全体表示、ホバー、クリックで詳細表示
+- タイトル・独自タグのキーワード検索（英語、大文字小文字を区別しない、空白区切りの各語はAND）
+- Topic / Region / Level / 公開日による絞り込み。同じfacet内はOR、異なるfacet間はAND
+- 条件に一致した点だけ強調し、残りは背景として残す。フィルタ時に座標を再計算しない
+- Map / List切り替え、一覧の並び替え・ページ送り。キーボードで記事を選ぶ場合はListを利用
+- タイトル、Level、公開日、複数タグ、DMM本文へのリンク、embeddingのコサイン類似度による類似記事6件
+- 条件・表示・選択記事をURLに保存、スマートフォン表示、読み込み失敗・検索結果なしの表示
+
+## 構成
+
+```text
+collect_daily_news.py       既存のHTMLメタデータ収集器（--mergeで新着を統合）
+daily_news_articles.json    元の記事メタデータ
+scripts/build_map.py        embedding → タグ推定 → UMAP → 類似記事 → JSON
+site/                      公開する静的ファイル（HTML / CSS / JS / data）
+scripts/build.mjs          データの基本検証とdistへのコピー
+tests/                     実ブラウザの操作テスト
+```
+
+フロントエンドはフレームワーク・ランタイム依存なし。13,517点はCanvasで描画し、一覧は12件ずつ表示します。生成済みJSONは約6 MBです。配信サーバーでgzip/Brotliを有効にすると初回読み込みを軽くできます。フォントのみGoogle Fontsを利用し、取得できない環境ではシステムフォントに切り替わります。
+
+## データ生成
+
+Python 3.12で検証しています。初回はモデルのダウンロードが必要です。CPUで実行可能、APIキーは不要です。
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install torch --index-url https://download.pytorch.org/whl/cpu
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python scripts/build_map.py
+```
+
+Debian/Ubuntuでvenvを作れない場合はpython3-venvをインストールしてください。検証環境のバージョンはrequirements.lock.txtに記録しています。同じ依存バージョンを使う場合：
+
+```bash
+.venv/bin/pip install -r requirements.lock.txt --extra-index-url https://download.pytorch.org/whl/cpu
+```
+
+- [Sentence Transformers](https://www.sbert.net/docs/quickstart.html) の `sentence-transformers/all-MiniLM-L6-v2` を使用し、記事タイトルを384次元の正規化embeddingへ変換
+- UMAP：cosine距離、n_neighbors=30、min_dist=0.16、random_state=42。座標を各軸0〜1へ正規化
+- Topic：広い分野はタイトルと25個のトピック説明文のembedding類似度で自動推定。近い候補がある場合は2つ付与。タイトルにAI関連語があればAIも追加で付与。旅行、交通、テクノロジー、AI、健康・医療、心理、食・料理、環境、動物、仕事、企業・ビジネス、経済・お金、文化、エンタメ・芸術、歴史、社会、政治・国際、科学、宇宙、生活・住まい、家族・人間関係、買い物・消費、教育、言語、スポーツ
+- 具体的なTopic：睡眠、煙草、飲酒、コーヒー、運動、食生活・栄養、メンタルヘルス、ペット、育児、恋愛・結婚、SNS、スマホ、ゲーム、映画、音楽、読書、ファッション、気候変動、リサイクル、リモートワークの20種類を、タイトルのキーワードに基づいて追加。広い分野のタグと併用する独立した複数ラベルで、階層にはしない。地図を拡大（1.6倍以上）するかTopicを選択すると具体的な話題のラベルも表示
+- Region：タイトルのキーワード規則で独立に複数付与。JapanとAsiaなどは同時に付与でき、階層への所属で配置を決めない
+- 類似記事：2次元上の距離ではなく、元のembeddingで近い6記事を事前計算
+- 同一モデル・タイトル集合のembeddingは`.cache/`へ保存。ブラウザへembeddingやモデルを配信しない
+
+小規模にパイプラインを確認する場合は `--limit 100 --output /tmp/atlas-sample.json`。Topic、Regionの規則はscripts/build_map.pyで編集できます。JSONには生成日時、モデル、推定方法も記録されます。
+
+記事タイトルとモデルを変更せずタグだけ調整する場合は `.venv/bin/python scripts/build_map.py --retag-only`。既存JSONの座標と類似記事を維持して、タグとマップのTopicラベルを更新します。記事集合・タイトル・モデルが変わっている場合は処理を止め、通常の全体ビルドを求めます。
+
+**精度上の限界：** タイトルだけに基づく近似です。記事本文のテーマ・地域を完全に網羅するものではなく、タグに誤推定や付与漏れがあります。キーワード検索は意味検索ではありません。UMAPは距離を完全には保存しません。全体を再生成すると座標が移動することがあります。
+
+## 新着の更新
+
+既存アーカイブを残して新着8ページを統合する例：
+
+```bash
+python3 collect_daily_news.py --all-pages --max-pages 8 --delay 1 --merge daily_news_articles.json --output daily_news_articles.json
+.venv/bin/python scripts/build_map.py
+npm run build
+```
+
+取得結果が0件の場合は既存出力を変更せず失敗します。更新間隔を大きく空けた場合はmax-pagesを増やすか、全ページ取得で空白期間を埋めてください。収集は本文へアクセスせず一覧ページのメタデータだけを扱います。定期実行する場合はこの順番で、各コマンドの成功後に次へ進めてください。定期実行のスケジューラ自体はこのMVPに含めていません。
+
+## 静的サイトのビルド・公開
+
+```bash
+npm run build
+```
+
+`dist/`を任意の静的ホスティングへ配置します（またはsite/をそのまま配信）。URL・fetchは相対参照のためサブディレクトリでも動きます。サーバー処理や検索時のLLM APIは不要です。この作業では外部へのデプロイは行っていません。
+
+## 検証
+
+Node.js 18以上で実行できます。
+
+```bash
+npm ci
+npx playwright install chromium
+npm test
+python3 -m unittest discover -s tests -p 'test_*.py'
+```
+
+実ブラウザでfacetのOR/AND、URL復元、検索・詳細・リンク・類似記事、日付・並び順・ページ送り、点のクリック、スマートフォンの横はみ出し、JSON取得失敗からの復帰を確認します。
+
+---
+
+以下は既存の収集器の説明とレッスン候補です。
+
 # DMM Daily News collector
 
 DMM Daily Newsの一覧ページに含まれるサーバー生成HTMLから、記事タイトル、レベル、公開日時、URLを抽出します。ブラウザやJavaScript実行環境は不要です。
