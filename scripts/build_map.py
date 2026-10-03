@@ -205,13 +205,37 @@ def specific_topics(title: str) -> list[str]:
     return topics
 
 
+def place_new(points_kept, embeddings_kept, embeddings_new, keys: list[str], k: int = 7):
+    """Place new articles near their most similar existing articles, keeping the existing layout."""
+    import numpy as np
+
+    similarities = embeddings_new @ embeddings_kept.T
+    placed = np.zeros((len(keys), 2))
+    for i, (row, key) in enumerate(zip(similarities, keys)):
+        nearest = np.argsort(row)[::-1][:k]
+        weights = np.maximum(row[nearest], 1e-6)
+        neighbors = points_kept[nearest]
+        # Neighbors can sit in different clusters, so use the group of nearby neighbors with
+        # the most similarity weight rather than a mean that may fall in empty space.
+        groups = np.linalg.norm(neighbors[:, None] - neighbors[None], axis=2) <= 0.05
+        group = groups[np.argmax(groups @ weights)]
+        point = (neighbors[group] * weights[group, None]).sum(axis=0) / weights[group].sum()
+        # A small offset derived from the key keeps points from stacking exactly, deterministically.
+        seed = int(hashlib.sha256(key.encode()).hexdigest()[:8], 16)
+        angle, radius = (seed % 3600) / 3600 * 2 * np.pi, 0.002 + (seed // 3600 % 100) / 100 * 0.004
+        placed[i] = np.clip(point + radius * np.array([np.cos(angle), np.sin(angle)]), 0, 1)
+    return placed
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=Path("daily_news_articles.json"))
     parser.add_argument("--output", type=Path, default=Path("site/data/articles.json"))
     parser.add_argument("--model", default="sentence-transformers/all-MiniLM-L6-v2")
     parser.add_argument("--limit", type=int, help="Use a subset for development")
-    parser.add_argument("--retag-only", action="store_true", help="Reuse coordinates and similar articles from the output; requires unchanged titles and model")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--retag-only", action="store_true", help="Reuse coordinates and similar articles from the output; requires unchanged titles and model")
+    mode.add_argument("--incremental", action="store_true", help="Keep existing coordinates and place new or retitled articles near similar ones")
     args = parser.parse_args()
     import numpy as np
     import torch
@@ -230,15 +254,29 @@ def main() -> None:
         parser.error("at least 4 valid articles are required")
     titles = [a["title"] for a in source]
     ids = [hashlib.sha256(a["url"].encode()).hexdigest()[:16] for a in source]
-    existing = None
-    if args.retag_only:
+    existing = previous = None
+    if args.retag_only or args.incremental:
+        flag = "--retag-only" if args.retag_only else "--incremental"
         if not args.output.exists():
-            parser.error("--retag-only requires an existing output file")
+            parser.error(f"{flag} requires an existing output file")
         previous = json.loads(args.output.read_text())
         existing = {a["id"]: a for a in previous["articles"]}
-        if (previous["meta"]["model"] != args.model or previous["meta"].get("embeddingInput") != "title"
-                or set(existing) != set(ids) or any(existing[id]["title"] != title for id, title in zip(ids, titles))):
+        if previous["meta"]["model"] != args.model or previous["meta"].get("embeddingInput") != "title":
+            parser.error(f"{flag} requires the same embedding model; run a full build instead")
+        if args.retag_only and (set(existing) != set(ids) or any(existing[id]["title"] != title for id, title in zip(ids, titles))):
             parser.error("--retag-only requires the same article IDs, titles and embedding model; run a full build instead")
+    # Articles that keep their coordinates in incremental mode; the rest are placed near similar ones.
+    kept = [i for i, id in enumerate(ids) if existing is not None and id in existing and existing[id]["title"] == titles[i]]
+    to_place = sorted(set(range(len(ids))) - set(kept)) if args.incremental else []
+    if args.incremental:
+        removed = len(set(existing) - set(ids))
+        unchanged = all(existing[ids[i]]["date"] == (source[i].get("published_at") or "")[:10] and existing[ids[i]]["level"] == source[i].get("level") for i in kept)
+        if not to_place and not removed and unchanged:
+            print("No new articles; output unchanged")
+            return
+        if len(kept) < 6:
+            parser.error("--incremental needs existing articles to place new ones; run a full build instead")
+        print(f"Incremental update: {len(to_place)} to place, {removed} removed", flush=True)
     cache = Path(".cache")
     cache.mkdir(exist_ok=True)
     fingerprint = hashlib.sha256(json.dumps([args.model, titles]).encode()).hexdigest()
@@ -253,17 +291,26 @@ def main() -> None:
     topic_names = list(TOPICS)
     topic_vectors = model.encode([v[0] for v in TOPICS.values()], normalize_embeddings=True)
     scores = embeddings @ topic_vectors.T
-    if existing is not None:
+    def find_similar():
+        print("Finding similar articles in embedding space", flush=True)
+        _, neighbors = NearestNeighbors(n_neighbors=min(7, len(source)), metric="cosine", n_jobs=4).fit(embeddings).kneighbors(embeddings)
+        return [[ids[j] for j in row if j != i][:6] for i, row in enumerate(neighbors)]
+
+    if args.retag_only:
         print("Preserving existing coordinates and similar articles", flush=True)
         points = np.array([[existing[id]["x"], existing[id]["y"]] for id in ids])
         similar = [existing[id]["similar"] for id in ids]
+    elif args.incremental:
+        points = np.zeros((len(ids), 2))
+        points[kept] = [[existing[ids[i]]["x"], existing[ids[i]]["y"]] for i in kept]
+        if to_place:
+            points[to_place] = place_new(points[kept], embeddings[kept], embeddings[to_place], [ids[i] for i in to_place])
+        similar = find_similar()
     else:
         print("Computing UMAP coordinates", flush=True)
         points = UMAP(n_components=2, n_neighbors=min(30, len(source) - 1), min_dist=0.16, metric="cosine", random_state=42).fit_transform(embeddings)
         points = (points - points.min(axis=0)) / np.maximum(np.ptp(points, axis=0), 1e-8)
-        print("Finding similar articles in embedding space", flush=True)
-        _, neighbors = NearestNeighbors(n_neighbors=min(7, len(source)), metric="cosine", n_jobs=4).fit(embeddings).kneighbors(embeddings)
-        similar = [[ids[j] for j in row if j != i][:6] for i, row in enumerate(neighbors)]
+        similar = find_similar()
     articles = []
     for i, article in enumerate(source):
         ranked = np.argsort(scores[i])[::-1]
@@ -293,7 +340,13 @@ def main() -> None:
         index = min(indices, key=lambda i: float(np.sum((points[i] - center) ** 2)))
         labels.append({"name": name, "kind": kind, "x": articles[index]["x"], "y": articles[index]["y"], "minZoom": 0 if kind == "category" else 1.6})
     facet_topics = [{"name": n, "label": label, "category": category, "color": CATEGORIES[category][1]} for category in CATEGORIES for n, (label, parent) in ALL_TOPICS.items() if parent == category]
-    payload = {"meta": {"generatedAt": datetime.now(timezone.utc).isoformat(), "model": args.model, "projection": "UMAP", "embeddingInput": "title", "tagMethod": "broad topic embedding similarity; AI/specific topic and region title rules; categories from topic parents", "count": len(articles)}, "facets": {"categories": [{"name": n, "label": label, "color": color} for n, (label, color) in CATEGORIES.items()], "topics": facet_topics, "regions": list(REGIONS)}, "labels": labels, "articles": articles}
+    generated_at = datetime.now(timezone.utc).isoformat()
+    if previous is None:
+        layout_built_at, placed_since_layout = generated_at, 0
+    else:
+        layout_built_at = previous["meta"].get("layoutBuiltAt", previous["meta"]["generatedAt"])
+        placed_since_layout = previous["meta"].get("placedSinceLayout", 0) + len(to_place)
+    payload = {"meta": {"generatedAt": generated_at, "model": args.model, "projection": "UMAP", "layoutBuiltAt": layout_built_at, "placedSinceLayout": placed_since_layout, "embeddingInput": "title", "tagMethod": "broad topic embedding similarity; AI/specific topic and region title rules; categories from topic parents", "count": len(articles)}, "facets": {"categories": [{"name": n, "label": label, "color": color} for n, (label, color) in CATEGORIES.items()], "topics": facet_topics, "regions": list(REGIONS)}, "labels": labels, "articles": articles}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     temporary = args.output.with_suffix(".tmp")
     temporary.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")) + "\n")

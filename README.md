@@ -71,15 +71,34 @@ Debian/Ubuntuでvenvを作れない場合はpython3-venvをインストールし
 
 ## 新着の更新
 
-既存アーカイブを残して新着8ページを統合する例：
+### 自動更新（GitHub Actions）
+
+`.github/workflows/update-site.yml` が毎週月曜 06:00 JST に実行されます。
+
+1. 一覧ページの先頭3ページ（1ページ54記事、約1か月分）を取得し、`daily_news_articles.json` に統合
+2. 新着がなければここで終了（コミットなし）
+3. `scripts/build_map.py --incremental` で新着だけを配置し、テストと `npm run build` の検証を通過したらデータをコミット
+4. `dist/` を GitHub Pages に公開
+
+`site/` を変更して main に push した場合も Pages に公開されます。外部APIやAPIキーは使いません。embeddingモデル（約90 MB）は Actions 上でダウンロードし、キャッシュします。
+
+手動実行：GitHub の Actions → "Update articles and deploy" → Run workflow。`max_pages` で取得ページ数を増やせます（更新が1か月以上止まっていた場合など）。`full_rebuild` を有効にするとマップ全体を再計算します（全ての点の位置が変わります）。
+
+初回のみ、リポジトリの Settings → Pages → Source を "GitHub Actions" にしてください。
+
+### 増分更新（--incremental）
+
+既存JSONの座標を維持し、新着記事とタイトルが変わった記事だけを、embeddingで似ている既存記事7件のうち近くに集まっている記事群の位置へ配置します。類似記事は全記事について再計算するため、既存記事の類似記事にも新着が入ります。新着・変更・削除がなければ出力を書き換えません。
 
 ```bash
-python3 collect_daily_news.py --all-pages --max-pages 8 --delay 1 --merge daily_news_articles.json --output daily_news_articles.json
-.venv/bin/python scripts/build_map.py
+python3 collect_daily_news.py --all-pages --max-pages 3 --delay 1 --pretty --merge daily_news_articles.json --output daily_news_articles.json
+.venv/bin/python scripts/build_map.py --incremental
 npm run build
 ```
 
-取得結果が0件の場合は既存出力を変更せず失敗します。更新間隔を大きく空けた場合はmax-pagesを増やすか、全ページ取得で空白期間を埋めてください。収集は本文へアクセスせず一覧ページのメタデータだけを扱います。定期実行する場合はこの順番で、各コマンドの成功後に次へ進めてください。定期実行のスケジューラ自体はこのMVPに含めていません。
+UMAPの配置は全体ビルド時の記事だけで決まるため、新しいテーマの記事が大量に増えた場合などは、ときどき全体ビルド（`--incremental`なし、またはworkflowの`full_rebuild`）を行ってください。JSONの `meta.layoutBuiltAt` に最後に配置を計算した日時、`meta.placedSinceLayout` にその後増分で配置した記事数を記録します。
+
+取得結果が0件の場合は既存出力を変更せず失敗します（workflowも失敗し、GitHubから通知されます）。収集は本文へアクセスせず一覧ページのメタデータだけを扱います。
 
 ## 静的サイトのビルド・公開
 
@@ -87,7 +106,7 @@ npm run build
 npm run build
 ```
 
-`dist/`を任意の静的ホスティングへ配置します（またはsite/をそのまま配信）。URL・fetchは相対参照のためサブディレクトリでも動きます。サーバー処理や検索時のLLM APIは不要です。この作業では外部へのデプロイは行っていません。
+`dist/`を任意の静的ホスティングへ配置します（またはsite/をそのまま配信）。URL・fetchは相対参照のためサブディレクトリでも動きます。サーバー処理や検索時のLLM APIは不要です。GitHub Pagesへの公開は上記のworkflowで行います。
 
 ## 検証
 
