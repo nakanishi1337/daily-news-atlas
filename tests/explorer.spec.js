@@ -54,6 +54,30 @@ test('AI uses the Topic filter and old Theme URLs migrate to Topic', async ({ pa
   expect(new URL(page.url()).searchParams.has('themes')).toBe(false);
 });
 
+test('categories expand to subtopics and combine with OR inside the Topic facet', async ({ page }) => {
+  const food = page.locator('[data-category="Food & Drink"]');
+  await expect(food.locator('.subtopics')).toBeHidden();
+  await food.locator('[data-facet="categories"]').click();
+  await expect(page.locator('#match-count')).toHaveText(count(all.filter(a => a.categories.includes('Food & Drink'))));
+  await food.locator('[data-toggle-category]').click();
+  await expect(food.locator('[data-toggle-category]')).toHaveAttribute('aria-expanded', 'true');
+  await page.locator('[data-category="Travel & Transport"] [data-toggle-category]').click();
+  await page.locator('#topic-filters [data-value="Trains"]').click();
+  const matching = all.filter(a => a.categories.includes('Food & Drink') || a.topics.includes('Trains'));
+  await expect(page.locator('#match-count')).toHaveText(count(matching));
+  await expect(page).toHaveURL(/categories=Food/);
+  await page.reload();
+  await expect(page.locator('#match-count')).toHaveText(count(matching));
+  // A row with a selected subtopic opens on load, so the selection stays visible.
+  await expect(page.locator('#topic-filters [data-value="Trains"]')).toBeVisible();
+  await expect(page.locator('.active-filter')).toHaveText(['食・飲み物×', '鉄道×']);
+});
+
+test('Japanese topic labels are searchable', async ({ page }) => {
+  await page.locator('#search').fill('和食');
+  await expect(page.locator('#match-count')).toHaveText(count(all.filter(a => a.topics.includes('Japanese Food'))));
+});
+
 test('date range, pagination, sorting and empty state', async ({ page }) => {
   await page.locator('#date-from').fill('2026-09-01');
   await page.locator('#date-to').fill('2026-09-23');
@@ -140,6 +164,7 @@ test('map fits in the initial viewport and mobile filters can be opened', async 
   await expect(page.locator('#topic-filters')).toBeHidden();
   await page.locator('#toggle-filters').click();
   await expect(page.locator('#topic-filters')).toBeVisible();
+  await page.locator('[data-category="Health & Body"] [data-toggle-category]').click();
   await page.locator('#topic-filters [data-value="Sleep"]').click();
   await expect(page.locator('#match-count')).toHaveText(count(all.filter(a => a.topics.includes('Sleep'))));
   await page.locator('#toggle-filters').click();
