@@ -4,7 +4,7 @@
 
 「今日のレッスンは何について話そう？」と迷ったときに、1万3千件以上の記事を眺めて、話してみたい話題を見つけられます。
 
-**👉 https://nakanishi1337.github.io/dmm-dailynews/**
+**👉 https://nakanishi1337.github.io/daily-news-atlas/**
 
 ![Daily News Atlasの画面。左に検索条件、中央に記事マップ、右に記事詳細と類似記事](docs/screenshot.png)
 
