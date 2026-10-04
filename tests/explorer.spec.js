@@ -146,8 +146,17 @@ test('long article details do not resize or move the map, including after zoomin
 
 test('mobile layout fits and details are accessible', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('/');
+  // Phones open with the list; the map stays one tap away and is kept in the URL.
+  await expect(page.locator('#list-panel')).toBeVisible();
+  await expect(page.locator('#map-panel')).toBeHidden();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.locator('#map-view').click();
+  await expect(page).toHaveURL(/view=map/);
+  await page.reload();
+  await expect(page.locator('#map-panel')).toBeVisible();
   await page.locator('#list-view').click();
+  expect(new URL(page.url()).searchParams.has('view')).toBe(false);
   await page.locator('.article-row').first().click();
   await expect(page.locator('.article-title')).toBeVisible();
   await expect(page.locator('#article-detail .primary-link')).toBeVisible();

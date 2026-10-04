@@ -7,6 +7,8 @@ let data, articles = [], matches = [], byId, categoryInfo, topicInfo, matchingId
 let width = 0, height = 0, zoom = 1, panX = 0, panY = 0, frame = 0, hovered = null;
 const canvas = $('map'), ctx = canvas.getContext('2d');
 const pageSize = 12;
+// Phones start with the list, which is easier to scan and tap than the map.
+const defaultView = () => matchMedia('(max-width: 620px)').matches ? 'list' : 'map';
 
 function loadURL() {
   const params = new URLSearchParams(location.search);
@@ -20,7 +22,7 @@ function loadURL() {
     const value = params.get(param) || '';
     state[key] = /^\d{4}-\d{2}-\d{2}$/.test(value) ? value : '';
   }
-  state.view = params.get('view') === 'list' ? 'list' : 'map';
+  state.view = ['map', 'list'].includes(params.get('view')) ? params.get('view') : defaultView();
   state.selected = byId.has(params.get('article')) ? params.get('article') : null;
   $('search').value = state.query;
   $('date-from').value = state.from;
@@ -33,7 +35,7 @@ function saveURL() {
   if (state.query) params.set('q', state.query);
   if (state.from) params.set('from', state.from);
   if (state.to) params.set('to', state.to);
-  if (state.view === 'list') params.set('view', 'list');
+  if (state.view !== defaultView()) params.set('view', state.view);
   if (state.selected) params.set('article', state.selected);
   history.replaceState(null, '', `${location.pathname}${params.size ? `?${params}` : ''}${location.hash}`);
 }
