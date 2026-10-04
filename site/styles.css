@@ -44,3 +44,5 @@
 @media(max-width:620px){.filters .facet:first-of-type{grid-column:1/-1}
 .topic-option,.subtopic{font-size:10px}
 .category-toggle{padding:7px 8px}}
+dialog h3{font-size:13px;font-weight:600;margin:26px 0 0;padding-top:20px;border-top:1px solid var(--line)}
+dialog h3+p{margin-top:10px}
