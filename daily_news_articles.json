@@ -1,5 +1,257 @@
 [
   {
+    "title": "Healthier Salt Could Save Millions of Lives",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-11-08T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/healthier-salt-could-save-millions-of-lives/i80a0tj3EfG_zhNlr0J9TA"
+  },
+  {
+    "title": "Greenland Opens New Airport to Attract More Tourists",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-08T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/greenland-opens-new-airport-to-attract-more-tourists/yY0KINeLEfGQjCNzVQBMmw"
+  },
+  {
+    "title": "Change Employers for Career Progress, Workers Say",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-08T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/change-employers-for-career-progress-workers-say/Aq702s5PEfGHt-M2NSkIkg"
+  },
+  {
+    "title": "AI Gives 19% Less Diverse Answers than Web Searches",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-11-08T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/ai-gives-19-less-diverse-answers-than-web-searches/7T_wUMHXEfGV1LNAV6Zdnw"
+  },
+  {
+    "title": "Travelers Want 'Plot Twist Trips' to Show Their Wild Side",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-11-07T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/travelers-want-plot-twist-trips-to-show-their-wild-side/bGssnsynEfGs4uP5_3U0Hw"
+  },
+  {
+    "title": "Sleeping in on Weekends May Be Bad for Your Heart",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-07T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/sleeping-in-on-weekends-may-be-bad-for-your-heart/S4x8xNkGEfG7x5N3HXS_Gg"
+  },
+  {
+    "title": "Fender Creates Special Pokemon Guitars",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-07T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/fender-creates-special-pokemon-guitars/gAyrANiIEfGXdpNzXMnA3Q"
+  },
+  {
+    "title": "China's Workers Now Support More Elderly than Children",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-11-07T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/chinas-workers-now-support-more-elderly-than-children/C2jqsNPoEfG5W-_85pGFJw"
+  },
+  {
+    "title": "Special Suits Could Make Japan's Castles More Accessible",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-06T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/special-suits-could-make-japans-castles-more-accessible/Dh4xKNebEfGg7vd_28KGXg"
+  },
+  {
+    "title": "New 'Blue Zone' of Long-Lived People Found in Sardinia",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-11-06T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/new-blue-zone-of-long-lived-people-found-in-sardinia/oepn2s2nEfGpVxeOg5MWHg"
+  },
+  {
+    "title": "KDDI Plans Drone Deliveries for Lawson Products",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-11-06T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/kddi-plans-drone-deliveries-for-lawson-products/PvIcttSJEfG8wN80M_tu5Q"
+  },
+  {
+    "title": "4 in 10 UK Teens Want More Work Experience at School",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-06T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/4-in-10-uk-teens-want-more-work-experience-at-school/zvPamtP7EfGYiBtdt536LQ"
+  },
+  {
+    "title": "teamLab to Open Digital Art Museum in US",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-11-05T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/teamlab-to-open-digital-art-museum-in-us/mgDUgtdmEfGNsDO_G751xg"
+  },
+  {
+    "title": "Should You Bring an Iced Coffee to an Interview?",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-05T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/should-you-bring-an-iced-coffee-to-an-interview/Cuf45tbrEfGcQacH5NTJSA"
+  },
+  {
+    "title": "Petting Your Dog May Protect You from Future Stress",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-11-05T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/petting-your-dog-may-protect-you-from-future-stress/E4T7rtL3EfGFRXcxHx7bhg"
+  },
+  {
+    "title": "Japan's Anime Market Hits Record $28.2 Billion",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-11-05T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japans-anime-market-hits-record-282-billion/5aq9ZtauEfGLYp_SQVedXw"
+  },
+  {
+    "title": "70% of Japanese Kids Read Less than an Hour a Week",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-05T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/70-of-japanese-kids-read-less-than-an-hour-a-week/9uFlatR2EfGX2J9znS0-5Q"
+  },
+  {
+    "title": "Democrats Win US House and Senate",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-11-04T18:13:36.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/democrats-win-us-house-and-senate/Dhv3WNh0EfG7cQMZkUER2w"
+  },
+  {
+    "title": "Japan Launches New Agency to Deal with Disasters",
+    "level": 9,
+    "difficulty": "Proficient",
+    "published_at": "2026-11-04T18:13:34.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japan-launches-new-agency-to-deal-with-disasters/2ySrZtebEfGbeDu05yG5BQ"
+  },
+  {
+    "title": "UK Airline Offers to Pay for Babies' First Passports",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-04T18:12:41.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/uk-airline-offers-to-pay-for-babies-first-passports/KbqKCtRvEfGpYAM9MUPi6g"
+  },
+  {
+    "title": "Sardinian Restaurants Ask Families to Put Phones Away",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-04T18:12:41.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/sardinian-restaurants-ask-families-to-put-phones-away/TmMijtMOEfGWJ6epOXQnCQ"
+  },
+  {
+    "title": "80% of Netflix Users Have Watched Korean Content",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-04T18:12:40.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/80-of-netflix-users-have-watched-korean-content/gYGpUtFfEfGpozcmA-m1CQ"
+  },
+  {
+    "title": "These US Cities Spend the Most on Groceries",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-03T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/these-us-cities-spend-the-most-on-groceries/8cIoPsZEEfGlMA8kvDdOqw"
+  },
+  {
+    "title": "Study Finds How a High-Calorie Diet May Affect the Brain",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-11-03T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/study-finds-how-a-high-calorie-diet-may-affect-the-brain/jvWwiM74EfGrz9s1OUqkNA"
+  },
+  {
+    "title": "Japan Changes Tax-Free Shopping Rules for Tourists",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-11-03T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/japan-changes-tax-free-shopping-rules-for-tourists/5Z6k-tSgEfGo1xPmhzhvMQ"
+  },
+  {
+    "title": "British Adventurer Finishes 28-Year Walk Around the World",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-11-03T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/british-adventurer-finishes-28-year-walk-around-the-world/IZKRftd2EfGjHofdFeUpCg"
+  },
+  {
+    "title": "1 in 10 Malaysian Men Borrow Money to Pay for Dates",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-03T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/1-in-10-malaysian-men-borrow-money-to-pay-for-dates/6ZWZCNLXEfGX1QepMrofbA"
+  },
+  {
+    "title": "Why You Should Go for a 'Color Walk'",
+    "level": 4,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-02T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/why-you-should-go-for-a-color-walk/hqytSM5gEfGFTNMvEeECjw"
+  },
+  {
+    "title": "Most People Expect AI to Reduce Jobs for Humans",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-11-02T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/most-people-expect-ai-to-reduce-jobs-for-humans/W4OHbrg0EfGYAK9uvMlQlA"
+  },
+  {
+    "title": "Getting a Ticket for Machu Picchu Is Now a Little Easier",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-11-02T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/getting-a-ticket-for-machu-picchu-is-now-a-little-easier/X397us7xEfGFnbe_UL6zuQ"
+  },
+  {
+    "title": "Accent Change May Be Sign of a Good Ear — Study",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-02T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/accent-change-may-be-sign-of-a-good-ear-study/yQ9DftFpEfG6I6e-yEHPsA"
+  },
+  {
+    "title": "31% of Japan's Graduates Quit Jobs Within 3 Years",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-02T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/31-of-japans-graduates-quit-jobs-within-3-years/-6jWnNMIEfGHtjuCF6RpOw"
+  },
+  {
+    "title": "Tokyo Restaurant Adds Space for Content Creators",
+    "level": 5,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-01T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/tokyo-restaurant-adds-space-for-content-creators/AV_cHNIiEfG1nbc3tRyA5w"
+  },
+  {
+    "title": "Preparing for Employment Costs S. Koreans $440 a Month",
+    "level": 6,
+    "difficulty": "Intermediate",
+    "published_at": "2026-11-01T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/preparing-for-employment-costs-s-koreans-440-a-month/7tyTvMyNEfG7Bav_mL1dmQ"
+  },
+  {
+    "title": "New Robot Butler Can Help You Find Your Keys",
+    "level": 7,
+    "difficulty": "Advanced",
+    "published_at": "2026-11-01T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/new-robot-butler-can-help-you-find-your-keys/0dxuZtHkEfGP1ncYJgCRqA"
+  },
+  {
+    "title": "Coral Reefs Face Collapse in Next 50 Years, Say Experts",
+    "level": 8,
+    "difficulty": "Advanced",
+    "published_at": "2026-11-01T18:00:00.000Z",
+    "url": "https://eikaiwa.dmm.com/app/daily-news/article/coral-reefs-face-collapse-in-next-50-years-say-experts/BGdPZM7nEfGMEteXNw1taw"
+  },
+  {
     "title": "Young Adults Find It Difficult to Make Friends — Survey",
     "level": 5,
     "difficulty": "Intermediate",
@@ -28,7 +280,7 @@
     "url": "https://eikaiwa.dmm.com/app/daily-news/article/maxxing-named-dictionarycoms-word-of-the-year/82XXitLEEfGx7n_Z-8Ln6Q"
   },
   {
-    "title": "Patrick Stewart, Legendary 'Star Trek' Actor, Dies at 86",
+    "title": "Patrick Stewart, Legendary Star Trek Actor, Dies at 86",
     "level": 9,
     "difficulty": "Proficient",
     "published_at": "2026-10-30T18:00:00.000Z",
